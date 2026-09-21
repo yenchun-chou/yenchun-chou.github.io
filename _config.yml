@@ -1,10 +1,10 @@
 locale: "en-US"
-title: "Your Name"
-description: "Software Engineer and Researcher"
-url: "https://yourname.github.io"
+title: "Yen Chun Chou"
+description: "Mechanical Engineer | PhD Candidate"
+url: "https://yenchun-chou.github.io"
 baseurl: ""
-repository: "yourname/yourname.github.io"
-timezone: "Europe/Rome"
+repository: "yenchun-chou/yenchun-chou.github.io"
+timezone: "America/Los_Angeles"
 logo: "/images/profile.svg"
 
 template:
@@ -22,15 +22,15 @@ discussions:
   category_id: ""
 
 author:
-  name: "Your Name"
-  role: "Your Role"
-  education: "Your Second Role or Field of Study"
-  location: "Your City, Country"
+  name: "Yen Chun Chou"
+  role: "Mechanical Engineer"
+  education: "PhD Candidate in Mechanical & Aerospace Engineering"
+  location: "California, USA"
   email: ""
   avatar: "/images/profile.svg"
   cv: ""
-  github: "https://github.com/yourname"
-  linkedin: "https://www.linkedin.com/in/yourname"
+  github: "https://github.com/yenchun-chou"
+  linkedin: "https://www.linkedin.com/in/yen-chun-chou-b43852168"
   scholar: ""
   orcid: ""
 
