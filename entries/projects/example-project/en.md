@@ -18,64 +18,113 @@ technologies: [SolidWorks, ANSYS Fluent, Heat Transfer, Fluid Flow]
 code: ""
 demo: ""
 paper: ""
-excerpt: "CFD analysis of temperature and velocity distributions in a packed-bed methanol steam reforming reactor, comparing baseline and passive flow-disturber configurations."
+excerpt: "Reactive CFD study of a packed-bed methanol steam reformer showing how passive ring-and-disk flow disturbers altered internal flow, reduced thermal gradients, and increased methanol conversion."
 ---
 
-This project investigates heat and fluid transport inside a packed-bed methanol steam reforming reactor using computational fluid dynamics (CFD). A baseline reactor without flow disturbers (0P) was compared with a reactor containing eight packages of passive ring-and-disk flow disturbers (8P).
+This project was conducted as part of my PhD research in Mechanical and Aerospace Engineering at UC Davis. The study used computational fluid dynamics (CFD) to investigate coupled reaction, heat transfer, and fluid-flow behavior in a packed-bed methanol steam reforming reactor with passive ring-and-disk flow disturbers. The flow-disturber geometry was based on the design reported by Liao (2008).
+
+A reactor without flow disturbers (0P) was compared with a reactor containing eight packages of ring-and-disk flow disturbers (8P).
 
 ## Problem
 
-Methanol steam reforming is an endothermic process, requiring heat transfer from the heated reactor wall into the catalyst bed. Temperature gradients and non-uniform flow within the packed bed can affect heat transport and reactor performance.
+Methanol steam reforming is an endothermic process that requires continuous heat transfer from the heated reactor wall to the catalyst bed.
 
-The objective of this study was to evaluate how passive flow disturbers modify the temperature and velocity fields inside the reactor.
+In a cylindrical packed-bed reactor, limited radial heat transfer can create a cold interior region and large radial temperature gradients. Near-wall channeling can further limit heat transport between the wall-adjacent region and the reactor interior.
 
-## Reactor Geometry
+The engineering question was therefore:
 
-The CFD domain represents the catalyst-bed section of the reactor, with a catalyst-bed length of 19.1 cm and an internal diameter of 3.47 cm.
+**Can passive internal geometry redistribute the flow and heat more effectively without requiring active mixing?**
+
+## Project Overview
+
+- **Method:** CFD using ANSYS Fluent
+- **Comparison:** Reactor without flow disturbers (0P) vs. reactor with eight flow-disturber packages (8P)
+- **Modeling:** Porous-medium flow, heat transfer, and temperature-dependent reaction kinetics
+- **Outputs:** Temperature distribution, velocity distribution, and methanol conversion
+- **Design variable:** Passive ring-and-disk flow-disturber geometry
+
+## Model Setup
+
+The CFD model represents the reacting catalyst-bed section of the methanol steam reformer. The 0P and 8P reactors were evaluated under the same operating conditions and model parameters so that differences in the results could be associated with the flow-disturber geometry.
+
+### Reactor Geometry
+
+The catalyst-bed section has a length of 19.1 cm and an internal diameter of 3.47 cm. For the CFD analysis, the geometry was simplified to include only the internal flow domain defined by the reactor inner diameter.
 
 ![Reactor geometry used in the CFD model](/images/projects/cfd-packed-bed-reactor/reactor-geometry.svg)
 
-*Reactor and CFD-domain geometry used in the simulation.*
+*Reactor geometry and simplified internal CFD domain.*
 
-## Flow Disturber Geometry
+### Flow Disturber Design
 
-The passive flow-disturber configuration consists of alternating ring-and-disk elements placed along the catalyst bed. The configuration evaluated in this study used a 2.54 cm disk and a ring with a 1.91 cm inner diameter and 3.47 cm outer diameter.
+Each flow-disturber package consists of a ring and a disk placed within the catalyst bed. The configuration evaluated in this study used a 2.54 cm disk and a ring with a 1.91 cm inner diameter and 3.47 cm outer diameter.
 
 ![Ring-and-disk flow disturber geometry](/images/projects/cfd-packed-bed-reactor/disturber-geometry.svg)
 
-*Ring-and-disk flow-disturber geometry used in the CFD comparison.*
+*Geometry and dimensions of the ring-and-disk flow disturbers within the packed-bed reactor.*
 
-## Simulation Setup
+### CFD Conditions and Reaction Model
 
-The 0P and 8P cases were evaluated under the same operating conditions, porous-medium properties, and reaction-kinetic parameters.
+Both configurations were simulated under identical operating conditions and model parameters. The catalyst bed was modeled as a porous medium, with heat transfer and temperature-dependent reaction kinetics included to capture the coupled flow, thermal, and reaction behavior.
 
 ![CFD simulation setup and model parameters](/images/projects/cfd-packed-bed-reactor/simulation-setup.svg)
 
-The model included a wall temperature of 533 K, an inlet temperature of 513 K, an operating pressure of 1 atm, porous-medium resistance parameters, effective catalyst-bed thermal conductivity, and temperature-dependent reaction kinetics.
-
 ## Temperature Distribution
 
-The temperature fields show how the flow disturbers modify thermal transport within the packed bed.
+The effect of the flow disturbers is clearly visible in the predicted temperature field.
 
 ![Temperature distributions for 0P and 8P configurations](/images/projects/cfd-packed-bed-reactor/temperature-profile.svg)
 
-*Temperature distributions for the baseline reactor (0P) and the reactor with eight packages of passive flow disturbers (8P). Both cases are shown using the same temperature scale.*
+*Temperature distributions for the reactor without flow disturbers (0P) and the reactor with eight flow-disturber packages (8P). Both cases use the same temperature scale.*
 
-The baseline configuration develops a pronounced cold region within the reactor. In the 8P configuration, the passive flow disturbers redistribute the flow and alter the temperature field throughout the catalyst bed.
+### What the CFD Shows
+
+In the 0P reactor, the reactant temperature drops to approximately **443 K** after entering the porous catalyst bed. This produces a pronounced cold region extending roughly **one-sixth of the reactor length**.
+
+With eight flow-disturber packages installed, the continuous cold region is disrupted. The ring-and-disk disturbers promote greater interaction between hotter wall-adjacent flow and the cooler reactor interior, reducing the thermal gradient within the packed bed.
+
+### Why It Matters
+
+Methanol steam reforming is strongly temperature dependent. A large cold region suppresses reaction rates in the interior of the catalyst bed, while improved radial heat transport allows more of the catalyst volume to operate under favorable thermal conditions.
+
+The temperature result therefore provides a direct physical explanation for why the flow-disturber configuration can improve reactor performance.
 
 ## Velocity Distribution
 
-The velocity fields illustrate how the internal flow structure changes when passive flow disturbers are introduced.
+The velocity field shows the transport mechanism responsible for the change in temperature distribution.
 
 ![Velocity distributions for 0P and 8P configurations](/images/projects/cfd-packed-bed-reactor/velocity-profile.svg)
 
-*Velocity contours for the 0P and 8P configurations. Independent velocity scales are shown because the two cases have different velocity ranges; the contours are therefore used primarily to compare flow structure and local redistribution rather than direct color-to-color velocity magnitude.*
+*Velocity contours for the 0P and 8P reactors. Independent velocity scales are shown because the two cases have different velocity ranges; the contours should therefore be used to compare flow structure rather than direct color-to-color velocity magnitude.*
 
-The baseline reactor exhibits a comparatively smooth axial velocity field. With the flow disturbers installed, repeated local acceleration, deceleration, and radial flow redistribution occur around the ring-and-disk elements.
+### What the CFD Shows
 
-## Key Takeaway
+The 0P reactor exhibits near-wall channeling through the porous bed, allowing a larger portion of the flow to continue downstream near the reactor wall.
 
-The CFD results demonstrate how passive internal geometry can significantly alter both the thermal and fluid transport behavior of a packed-bed reactor. The flow disturbers modify local velocity patterns and redistribute the temperature field, providing a basis for evaluating passive strategies for improving heat and mass transport in reacting packed-bed systems.
+The 8P configuration interrupts this predominantly axial flow path. Flow passing around the alternating rings and disks experiences repeated local acceleration and deceleration, together with greater radial redistribution through the catalyst bed.
+
+### Why It Matters
+
+The increased radial motion strengthens transport between the heated wall region and the cooler reactor interior.
+
+This change in the velocity field provides the transport mechanism behind the reduced thermal gradient observed in the 8P temperature distribution.
+
+## Methanol Conversion
+
+The thermal and flow improvements also translated into reactor-level performance.
+
+Across the simulated reactor cases, the configurations containing flow disturbers produced **higher methanol conversion than the corresponding reactors without flow disturbers**.
+
+Conversion decreased as space velocity increased for both configurations, but the flow-disturber cases maintained the higher conversion trend across the simulated conditions.
+
+This result connects the CFD field observations to the practical reactor objective: improving the utilization of the catalyst bed and increasing fuel conversion through passive heat- and flow-management strategies.
+
+## Engineering Takeaways
+
+- **Passive geometry changed the transport mechanism.** The ring-and-disk elements interrupted the predominantly axial flow field and increased radial flow redistribution within the packed bed.
+- **The thermal field improved as a consequence.** The large cold region observed in the 0P reactor was disrupted and the radial thermal gradient was reduced in the 8P configuration.
+- **The transport changes affected reactor performance.** The flow-disturber cases produced higher methanol conversion than the corresponding reactors without flow disturbers.
+- **The design requires no active mixing.** Internal geometry can therefore serve as a passive reactor-design variable for improving coupled heat and mass transport in a reacting packed bed.
 
 ## References
 
