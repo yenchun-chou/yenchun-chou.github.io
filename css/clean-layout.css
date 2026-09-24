@@ -187,13 +187,17 @@ hr {
 }
 
 .featured-project {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
+  gap: 36px;
+  align-items: center;
   margin: 0 0 64px;
 }
 
 .featured-project-image-link {
   display: block;
   width: 100%;
-  margin-bottom: 24px;
+  margin: 0;
   overflow: hidden;
   border-radius: 6px;
 }
@@ -202,7 +206,7 @@ hr {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 440px;
+  max-height: 320px;
   object-fit: contain;
 }
 
@@ -274,5 +278,17 @@ hr {
 
   .featured-project-description {
     font-size: 14px;
+  }
+
+  .featured-project {
+  display: block;
+  }
+
+  .featured-project-image-link {
+  margin-bottom: 18px;
+  }
+
+  .featured-project-image {
+  max-height: 320px;
   }
 }
