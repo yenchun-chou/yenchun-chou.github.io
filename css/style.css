@@ -38,7 +38,7 @@ img { max-width: 100%; vertical-align: middle; }
 a { color: var(--accent); text-decoration: none; }
 a:hover { color: var(--fg); text-decoration: underline; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-decoration: none; }
-.wrapper { width: 100%; max-width: 900px; margin: 0 auto; padding: 0 30px; }
+.wrapper { width: 100%; max-width: 1040px; margin: 0 auto; padding: 0 30px; }
 .site-header { position: relative; z-index: 1; background: var(--bg); border-top: 5px solid var(--fg-soft); border-bottom: 1px solid var(--border); min-height: 61px; }
 .site-header .wrapper { max-width: 1100px; }
 .site-header .wrapper { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
