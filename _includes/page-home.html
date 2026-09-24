@@ -1,8 +1,7 @@
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
-{% assign projects_only = site.pages | where: 'type', 'project' %}
-{% assign articles_only = site.pages | where: 'type', 'article' %}
-{% assign lang_entries = projects_only | concat: articles_only | where: 'lang', current_lang %}
+{% assign projects_only = site.pages | where: 'type', 'project' | where: 'lang', current_lang %}
+{% assign articles_only = site.pages | where: 'type', 'article' | where: 'lang', current_lang %}
 
 <div class="profile">
   {% if site.author.avatar and site.author.avatar != '' %}
@@ -43,16 +42,14 @@
   {% endfor %}
 </div>
 
-{% if lang_entries.size > 0 %}
-  <h2 class="section-title">{{ t.home.recent_title }}</h2>
-  <p class="section-intro">{{ t.home.recent_intro }}</p>
+{% if projects_only.size > 0 %}
+  <h2 class="section-title">Selected Projects</h2>
 
-  <div class="recent-list">
-    {% assign recent = lang_entries | sort: 'date' | reverse %}
-    {% for entry in recent limit: site.appearance.recent_items_on_home %}
-      {% include recent-entry.html item=entry %}
+  <div class="featured-projects">
+    {% assign projects = projects_only | sort: 'date' | reverse %}
+
+    {% for project in projects limit: 3 %}
+      {% include featured-project.html item=project %}
     {% endfor %}
   </div>
-
-  <p class="more-link"><a href="{{ t.home.archive_url | relative_url }}">{{ t.home.archive_link }}</a></p>
 {% endif %}
