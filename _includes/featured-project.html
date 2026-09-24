@@ -1,0 +1,45 @@
+{% assign project_image = include.item.thumbnail | default: include.item.image | default: include.item.cover %}
+
+<article class="featured-project">
+
+  {% if project_image and project_image != '' %}
+    <a class="featured-project-image-link" href="{{ include.item.url | relative_url }}">
+      <img
+        class="featured-project-image"
+        src="{{ project_image | relative_url }}"
+        alt="{{ include.item.thumbnail_alt | default: include.item.title }}"
+      >
+    </a>
+  {% endif %}
+
+  <div class="featured-project-content">
+
+    {% if include.item.role %}
+      <p class="featured-project-role">{{ include.item.role }}</p>
+    {% endif %}
+
+    <h3 class="featured-project-title">
+      <a href="{{ include.item.url | relative_url }}">
+        {{ include.item.title }}
+      </a>
+    </h3>
+
+    {% if include.item.excerpt %}
+      <p class="featured-project-description">
+        {{ include.item.excerpt | strip_html | strip_newlines }}
+      </p>
+    {% endif %}
+
+    {% if include.item.technologies.size > 0 %}
+      <p class="featured-project-technologies">
+        {{ include.item.technologies | join: ' · ' }}
+      </p>
+    {% endif %}
+
+    <p class="featured-project-link">
+      <a href="{{ include.item.url | relative_url }}">View Project →</a>
+    </p>
+
+  </div>
+
+</article>
