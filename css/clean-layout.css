@@ -188,8 +188,8 @@ hr {
 
 .featured-project {
   display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.9fr);
-  gap: 36px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, 1fr);
+  gap: 32px;
   align-items: center;
   margin: 0 0 64px;
 }
@@ -265,11 +265,16 @@ hr {
 
 @media screen and (max-width: 700px) {
   .featured-project {
+    display: block;
     margin-bottom: 48px;
   }
 
   .featured-project-image-link {
     margin-bottom: 18px;
+  }
+
+  .featured-project-image {
+    max-height: 320px;
   }
 
   .featured-project-title {
@@ -278,17 +283,5 @@ hr {
 
   .featured-project-description {
     font-size: 14px;
-  }
-
-  .featured-project {
-  display: block;
-  }
-
-  .featured-project-image-link {
-  margin-bottom: 18px;
-  }
-
-  .featured-project-image {
-  max-height: 320px;
   }
 }
