@@ -7,11 +7,11 @@ slug: toluene-steam-reforming
 permalink: /entries/toluene-steam-reforming/
 date: 2025-04-01
 year: 2025
-image: "/images/projects/toluene-steam-reforming/experimental-setup.svg"
-thumbnail: "/images/projects/toluene-steam-reforming/experimental-setup.svg"
-cover: "/images/projects/toluene-steam-reforming/experimental-setup.svg"
-cover_alt: "Experimental fixed-bed reactor system for toluene steam reforming and catalyst testing"
-thumbnail_alt: "Experimental fixed-bed reactor system for toluene steam reforming and catalyst testing"
+image: "/images/projects/toluene-steam-reforming/combined-conversion.svg"
+thumbnail: "/images/projects/toluene-steam-reforming/combined-conversion.svg"
+cover: "/images/projects/toluene-steam-reforming/combined-conversion.svg"
+cover_alt: "Toluene and methane conversion versus furnace temperature for SASOL and Carbo catalyst supports"
+thumbnail_alt: "Toluene and methane conversion versus furnace temperature for SASOL and Carbo catalyst supports"
 label: "EXPERIMENTAL"
 role: "Reactor Testing & Catalyst Evaluation"
 technologies: [Fixed-Bed Reactor, Agilent 990 Micro GC, Catalyst Testing, Gas Analysis]
