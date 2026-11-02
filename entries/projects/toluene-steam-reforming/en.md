@@ -105,7 +105,7 @@ $$
 **Methane steam reforming**
 
 $$
-\mathrm{CH_4 + H_2O \rightarrow CO + 3H_2}
+\mathrm{CH_4 + H_2O \rightleftharpoons CO + 3H_2}
 $$
 
 **Water-gas-shift reaction**
@@ -142,7 +142,7 @@ For the SASOL-supported catalyst, C₇H₈ conversion began to depart from its h
 
 For the Carbo-supported catalyst, C₇H₈ reforming behavior remained similar to the individual toluene test, while essentially no CH₄ reforming was observed.
 
-The source experiments attribute the reduced low-temperature activity primarily to the presence of both C₇H₈ and CH₄ in the feed. The mixed-feed condition also had a substantially lower steam-to-carbon ratio than the toluene-only condition:
+The study attributes the reduced low-temperature activity primarily to the presence of both C₇H₈ and CH₄ in the feed. The mixed-feed condition also had a substantially lower steam-to-carbon ratio than the toluene-only condition:
 
 $$
 \mathrm{S/C}_{\mathrm{toluene}}
@@ -156,7 +156,7 @@ $$
 \approx 1.04
 $$
 
-The lower S/C ratio is therefore a **likely contributing factor** that should also be considered when comparing the individual and mixed-feed experiments.
+The lower S/C ratio is a **likely contributing factor** that should also be considered when comparing the individual and mixed-feed experiments.
 
 ### CO Conversion and Water-Gas Shift
 
@@ -186,20 +186,4 @@ These results indicate useful high-temperature stability while also showing meas
 
 ## Engineering Takeaways
 
-- Catalyst support strongly affected reaction behavior even when the same Ni-Fe-MgO active formulation was used.
-- The SASOL-supported catalyst maintained essentially complete toluene conversion **down to approximately 600 °C**, compared with approximately 725 °C for the Carbo-supported catalyst.
-- SASOL also promoted methane reforming and water-gas-shift activity, providing a stronger pathway toward **hydrogen production**.
-- Hydrogen-selectivity measurements under the water-gas-shift condition supported this interpretation, with approximately 50% H₂O conversion toward H₂ at 700 °C.
-- Carbo retained methane while still achieving high toluene conversion at elevated temperature, which may be advantageous when **renewable natural gas production** is preferred.
-- Mixed-feed tests showed reduced low-temperature activity in the presence of both C₇H₈ and CH₄. The substantially lower S/C ratio in this condition is a likely contributing factor and should also be considered when interpreting the comparison.
-- Time-on-stream testing showed strong high-temperature conversion over at least 12 hours, while the modest decline observed in methane-only testing indicates that catalyst deactivation remains an important design consideration.
-
-## References
-
-T. Baidya, R. J. Cattolica, and R. Seiser, "High Performance Ni-Fe-Mg Catalyst for Tar Removal in Producer Gas," *Applied Catalysis A: General*, vol. 558, pp. 131–139, 2018.
-
-R. Cattolica, Y.-C. Chou, R. Seiser, and M. Summers, "Tar Reforming Catalyst for Renewable Natural Gas or Hydrogen Production from Biomass Gasification," poster presentation, REGATEC 2026, Lund, Sweden, 2026.
-
-R. Cattolica, R. Seiser, and Y.-C. Chou, "Catalyst Support Effects on Tar Reforming for the Production of Renewable Natural Gas and Hydrogen," conference presentation, TCBiomass 2026, Denver, Colorado, 2026.
-
-R. J. Cattolica and T. Baidya, U.S. Patent No. 12,594,544 B2, 2026.
+- Catalyst support strongly affected reaction behavior even when the
