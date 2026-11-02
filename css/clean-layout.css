@@ -40,9 +40,9 @@ hr {
 
 .article-cover-frame {
   margin: 0 0 26px;
-  padding: 18px;
-  border-radius: 8px;
-  background: var(--thumb-bg);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
   overflow: hidden;
 }
 
@@ -53,9 +53,11 @@ hr {
   max-height: 420px;
   height: auto;
   margin: 0 auto;
-  border-radius: 4px;
+  padding: 18px;
+  box-sizing: border-box;
+  border-radius: 8px;
   object-fit: contain;
-  background: transparent;
+  background: var(--thumb-bg);
 }
 
 .entry-row,
@@ -126,12 +128,12 @@ hr {
 
 @media screen and (max-width: 700px) {
   .article-cover-frame {
-    padding: 12px;
     margin-bottom: 22px;
   }
 
   .article-cover {
     max-height: 320px;
+    padding: 12px;
   }
 
   .entry-row,
@@ -307,16 +309,9 @@ img[src*="co-conversion"] {
   max-width: 680px;
   height: auto;
   margin: 0 auto;
-
   background: transparent !important;
   padding: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
-}
-
-.article-cover-frame:has(img[src*="combined-conversion"]) {
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
 }
