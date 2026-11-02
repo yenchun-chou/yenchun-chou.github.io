@@ -3,3 +3,21 @@
 <script src="{{ '/js/background.js' | relative_url }}?v={{ asset_version }}" defer></script>
 <script src="{{ '/js/font.js' | relative_url }}?v={{ asset_version }}" defer></script>
 <script src="{{ '/js/nav.js' | relative_url }}?v={{ asset_version }}" defer></script>
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']]
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+</script>
