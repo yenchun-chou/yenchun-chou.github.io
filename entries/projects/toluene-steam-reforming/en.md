@@ -18,7 +18,7 @@ technologies: [Fixed-Bed Reactor, Agilent 990 Micro GC, Catalyst Testing, Gas An
 code: ""
 demo: ""
 paper: ""
-excerpt: "High-temperature fixed-bed reactor testing of Ni-Fe-MgO catalysts for biomass tar removal, evaluating how catalyst support affects toluene, methane, and CO conversion."
+excerpt: "High-temperature fixed-bed reactor testing of Ni-Fe-MgO catalysts for biomass tar removal, evaluating how catalyst support affects toluene, methane, CO conversion, and hydrogen-oriented reaction pathways."
 ---
 
 This project was conducted during my visiting graduate research at UC San Diego. The study evaluated how catalyst support affects the performance of a Ni-Fe-MgO catalyst for tar removal from biomass-derived producer gas, using toluene (C₇H₈) as a model tar compound.
@@ -29,14 +29,14 @@ My work involved assembling, commissioning, and operating the fixed-bed reactor 
 
 Biomass gasification produces a gas mixture containing H₂, CO, CO₂, CH₄, H₂O, and condensable hydrocarbon tars. These tars must be removed before downstream processing for renewable natural gas or hydrogen production.
 
-A Ni-Fe-MgO catalyst had previously been developed for producer-gas cleanup. This study compared the same catalyst formulation on two different support materials:
+A Ni-Fe-MgO catalyst had previously been developed for producer-gas cleanup. This study compared the catalyst on two different support materials:
 
 - **SASOL Puralox 300/200 gamma-alumina**
 - **Carbo HSP sintered bauxite**
 
-The catalyst contained approximately **1.16 wt% total active loading**, with the active components distributed as **Ni/Fe/MgO = 45/21/34 by weight**.
+The nominal active-component ratio was **Ni/Fe/MgO = 45/21/34 by weight**.
 
-The objective was to determine how the support affected toluene reforming, methane reforming, and water-gas-shift activity over a 600–800 °C operating range.
+The objective was to determine how the support affected toluene reforming, methane reforming, water-gas-shift activity, and the resulting implications for renewable natural gas versus hydrogen production.
 
 ## Experimental System
 
@@ -48,19 +48,19 @@ The experiments were performed in a temperature-controlled fixed-bed flow reacto
 
 ### Shared Operating Conditions
 
+- **Reactor:** 10-mm-ID quartz tube
 - **Test temperature:** 600–800 °C
 - **Catalyst:** 500 mg
-- **Quartz dilution:** 5 g of 1/32-inch quartz chips
+- **Quartz dilution:** 5 g
 - **Quartz-to-catalyst mass ratio:** 10:1
 - **Total gas flow rate:** 400 sccm
-- **WHSV:** 48,000 standard cm³ g⁻¹ h⁻¹
+- **Space velocity:** 48,000 standard cm³ g⁻¹ h⁻¹
 - **Gas analysis:** Agilent 990 micro GC
 
 ### Feed Conditions
 
 **Trial 1 — Toluene Reforming**  
-0.73 vol% C₇H₈, 25 vol% H₂O, 74.3 vol% N₂  
-Approximate steam-to-carbon ratio:
+0.73 vol% C₇H₈, 25 vol% H₂O, 74.3 vol% N₂
 
 $$
 \mathrm{S/C}
@@ -70,8 +70,7 @@ $$
 $$
 
 **Trial 2 — Methane Reforming**  
-19 vol% CH₄, 25 vol% H₂O, 56.0 vol% N₂  
-Approximate steam-to-carbon ratio:
+19 vol% CH₄, 25 vol% H₂O, 56.0 vol% N₂
 
 $$
 \mathrm{S/C}
@@ -81,8 +80,7 @@ $$
 $$
 
 **Trial 3 — Combined Toluene and Methane Reforming**  
-0.73 vol% C₇H₈, 19 vol% CH₄, 25 vol% H₂O, 55.3 vol% N₂  
-Approximate steam-to-carbon ratio:
+0.73 vol% C₇H₈, 19 vol% CH₄, 25 vol% H₂O, 55.3 vol% N₂
 
 $$
 \mathrm{S/C}
@@ -94,7 +92,7 @@ $$
 **Trial 4 — Water-Gas-Shift Test**  
 19.9 vol% CO, 25 vol% H₂O, 55.1 vol% N₂
 
-S/C is not used for Trial 4 because the feed contains CO rather than a hydrocarbon reforming reactant.
+S/C is not reported for Trial 4 because the feed contains CO rather than a hydrocarbon reforming reactant.
 
 ## Reaction Pathways
 
@@ -124,13 +122,13 @@ $$
 
 *Individual C₇H₈ and CH₄ reforming tests comparing the SASOL and Carbo-supported catalysts with equilibrium predictions.*
 
-Under the toluene-only condition, the SASOL-supported catalyst maintained essentially complete C₇H₈ conversion down to approximately **600 °C**.
+Under the toluene-only condition, the SASOL-supported catalyst maintained essentially complete C₇H₈ conversion while tracking equilibrium **down to approximately 600 °C**.
 
-The Carbo-supported catalyst required approximately **725 °C** to reach complete C₇H₈ conversion, corresponding to an approximately **125 °C difference in the temperature required for complete conversion**.
+The Carbo-supported catalyst did not reach complete C₇H₈ conversion until approximately **725 °C**, corresponding to an approximately **125 °C difference** in the temperature at which complete conversion was maintained.
 
-The difference between the supports was even more pronounced for methane reforming. The SASOL-supported catalyst followed the expected CH₄ equilibrium-conversion trend over much of the 600–800 °C range, while the Carbo-supported catalyst showed essentially no methane conversion.
+The difference between the supports was even more pronounced for methane reforming. The SASOL-supported catalyst followed the expected CH₄ equilibrium-conversion trend over much of the 600–800 °C range, while the Carbo-supported catalyst showed essentially no methane reforming.
 
-These results demonstrate that catalyst support had a major influence on both tar removal and methane-reforming activity.
+These results demonstrate that catalyst support strongly influenced both tar removal and methane-reforming activity.
 
 ### Combined C₇H₈ and CH₄ Reforming
 
@@ -138,13 +136,13 @@ These results demonstrate that catalyst support had a major influence on both ta
 
 *Combined C₇H₈ and CH₄ conversion under the mixed-feed condition.*
 
-When C₇H₈ and CH₄ were introduced together, the effective reforming behavior changed.
+When C₇H₈ and CH₄ were introduced together, reforming activity decreased at lower temperatures.
 
-For the SASOL-supported catalyst, C₇H₈ conversion decreased at lower temperatures, with performance beginning to depart substantially from the individual toluene-reforming case below approximately **675 °C**. CH₄ conversion also departed from its equilibrium trend below approximately **725 °C**.
+For the SASOL-supported catalyst, C₇H₈ conversion began to depart from its high-conversion behavior below approximately **675 °C**, while CH₄ conversion began to depart from equilibrium below approximately **725 °C**.
 
-The Carbo-supported catalyst continued to reform C₇H₈ at elevated temperature while showing essentially no CH₄ conversion.
+For the Carbo-supported catalyst, C₇H₈ reforming behavior remained similar to the individual toluene test, while essentially no CH₄ reforming was observed.
 
-The combined-feed condition also had a substantially lower steam-to-carbon ratio than the toluene-only condition:
+The source experiments attribute the reduced low-temperature activity primarily to the presence of both C₇H₈ and CH₄ in the feed. The mixed-feed condition also had a substantially lower steam-to-carbon ratio than the toluene-only condition:
 
 $$
 \mathrm{S/C}_{\mathrm{toluene}}
@@ -158,7 +156,7 @@ $$
 \approx 1.04
 $$
 
-Therefore, the lower C₇H₈ conversion observed in the combined-feed experiment should not be interpreted as evidence of methane inhibition alone. The lower available steam relative to total carbon is also an important difference between the two test conditions.
+The lower S/C ratio is therefore a **likely contributing factor** that should also be considered when comparing the individual and mixed-feed experiments.
 
 ### CO Conversion and Water-Gas Shift
 
@@ -168,24 +166,40 @@ Therefore, the lower C₇H₈ conversion observed in the combined-feed experimen
 
 The water-gas-shift test used a feed containing **19.9 vol% CO, 25 vol% H₂O, and 55.1 vol% N₂**.
 
-The SASOL-supported catalyst closely followed the expected equilibrium conversion across the 600–800 °C test range.
+The SASOL-supported catalyst closely followed the expected water-gas-shift equilibrium conversion across the 600–800 °C test range.
 
 The Carbo-supported catalyst remained below equilibrium throughout the test range, although its CO conversion increased with increasing temperature.
 
-Together with the methane-reforming results, this behavior indicates that the SASOL-supported catalyst was substantially more active for reactions that convert CH₄ and CO toward additional hydrogen production.
+Hydrogen-selectivity measurements further showed that, at approximately **700 °C**, the SASOL-supported catalyst converted about **50% of the H₂O toward H₂ formation** under the water-gas-shift condition.
+
+Together with the methane-reforming results, this behavior shows why the SASOL-supported catalyst is better suited to a process targeting increased hydrogen production.
+
+### Time-on-Stream Stability
+
+Additional time-on-stream testing was conducted with the SASOL-supported catalyst at **800 °C**.
+
+Under the CH₄-only condition, methane conversion remained near 95% initially, decreased by approximately **2–3 percentage points**, and then remained relatively stable.
+
+Under the mixed CH₄/C₇H₈ feed, C₇H₈ conversion remained near **100% for at least 12 hours**, while CH₄ conversion remained approximately **93–95%**.
+
+These results indicate useful high-temperature stability while also showing measurable deactivation in the methane-only experiment. Additional long-duration testing would be required to characterize the deactivation behavior more completely.
 
 ## Engineering Takeaways
 
-- Catalyst support strongly affected reaction behavior even when the active Ni-Fe-MgO formulation remained unchanged.
-- The SASOL-supported catalyst achieved complete toluene conversion at approximately **600 °C**, compared with approximately **725 °C** for the Carbo-supported catalyst.
-- SASOL also promoted methane reforming and water-gas-shift activity, making it more suitable for a process targeting increased **hydrogen production**.
-- Carbo retained methane while still providing high toluene conversion at elevated temperature, which may be advantageous when **renewable natural gas production** is the preferred downstream objective.
-- Mixed-feed performance depended not only on the presence of multiple reactants but also on the change in steam-to-carbon ratio, highlighting the importance of evaluating catalysts under representative producer-gas compositions.
+- Catalyst support strongly affected reaction behavior even when the same Ni-Fe-MgO active formulation was used.
+- The SASOL-supported catalyst maintained essentially complete toluene conversion **down to approximately 600 °C**, compared with approximately 725 °C for the Carbo-supported catalyst.
+- SASOL also promoted methane reforming and water-gas-shift activity, providing a stronger pathway toward **hydrogen production**.
+- Hydrogen-selectivity measurements under the water-gas-shift condition supported this interpretation, with approximately 50% H₂O conversion toward H₂ at 700 °C.
+- Carbo retained methane while still achieving high toluene conversion at elevated temperature, which may be advantageous when **renewable natural gas production** is preferred.
+- Mixed-feed tests showed reduced low-temperature activity in the presence of both C₇H₈ and CH₄. The substantially lower S/C ratio in this condition is a likely contributing factor and should also be considered when interpreting the comparison.
+- Time-on-stream testing showed strong high-temperature conversion over at least 12 hours, while the modest decline observed in methane-only testing indicates that catalyst deactivation remains an important design consideration.
 
 ## References
 
-T. Baidya, R. J. Cattolica, and R. Seiser, "High Performance Ni-Fe-MgO Catalyst for Tar Removal in Producer Gas," *Applied Catalysis A: General*, vol. 558, pp. 131–139, 2018.
+T. Baidya, R. J. Cattolica, and R. Seiser, "High Performance Ni-Fe-Mg Catalyst for Tar Removal in Producer Gas," *Applied Catalysis A: General*, vol. 558, pp. 131–139, 2018.
 
-R. Cattolica, Y.-C. Chou, R. Seiser, and J. Summers, "Tar Reforming Catalyst for Renewable Natural Gas or Hydrogen Production from Biomass Gasification," conference abstract, 12th International Conference on Renewable Energy Gas Technology, Lund, Sweden, 2026.
+R. Cattolica, Y.-C. Chou, R. Seiser, and M. Summers, "Tar Reforming Catalyst for Renewable Natural Gas or Hydrogen Production from Biomass Gasification," poster presentation, REGATEC 2026, Lund, Sweden, 2026.
 
-R. Cattolica, R. Seiser, and Y.-C. Chou, "Catalyst Support Effects on Tar Reforming for the Production of Renewable Natural Gas and Hydrogen," TCBiomass 2026, Denver, Colorado, 2026.
+R. Cattolica, R. Seiser, and Y.-C. Chou, "Catalyst Support Effects on Tar Reforming for the Production of Renewable Natural Gas and Hydrogen," conference presentation, TCBiomass 2026, Denver, Colorado, 2026.
+
+R. J. Cattolica and T. Baidya, U.S. Patent No. 12,594,544 B2, 2026.
