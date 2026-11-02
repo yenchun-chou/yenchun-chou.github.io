@@ -34,13 +34,13 @@ hr {
   margin-bottom: 8px;
 }
 
-.article-page .post-date {
+.case-study-page .post-date {
   margin-bottom: 10px;
 }
 
-/* Default cover styling for all case studies */
+/* Default case-study cover styling */
 
-.article-cover-frame {
+.case-study-cover {
   margin: 0 0 26px;
   padding: 18px;
   border-radius: 8px;
@@ -48,7 +48,7 @@ hr {
   overflow: hidden;
 }
 
-.article-cover {
+.project-hero {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -59,6 +59,8 @@ hr {
   object-fit: contain;
   background: transparent;
 }
+
+/* Project / writing lists */
 
 .entry-row,
 .writing-item {
@@ -126,13 +128,15 @@ hr {
   margin-bottom: 0;
 }
 
+/* Tablet / mobile */
+
 @media screen and (max-width: 700px) {
-  .article-cover-frame {
+  .case-study-cover {
     padding: 12px;
     margin-bottom: 22px;
   }
 
-  .article-cover {
+  .project-hero {
     max-height: 320px;
   }
 
@@ -318,25 +322,28 @@ img[src*="co-conversion"] {
 
 /* Toluene reforming case-study cover only */
 
-.project-toluene-steam-reforming .article-cover-frame {
+.project-toluene-steam-reforming .case-study-cover {
   padding: 0 !important;
   background: transparent !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
-.project-toluene-steam-reforming .article-cover {
+.project-toluene-steam-reforming .project-hero {
   padding: 0 !important;
   background: transparent !important;
+  border: 0 !important;
   border-radius: 0 !important;
+  box-shadow: none !important;
 }
 
 @media screen and (max-width: 700px) {
-  .project-toluene-steam-reforming .article-cover-frame {
+  .project-toluene-steam-reforming .case-study-cover {
     padding: 0 !important;
     background: transparent !important;
   }
 
-  .project-toluene-steam-reforming .article-cover {
+  .project-toluene-steam-reforming .project-hero {
     padding: 0 !important;
     background: transparent !important;
   }
