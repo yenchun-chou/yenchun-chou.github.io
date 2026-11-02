@@ -186,4 +186,18 @@ These results indicate useful high-temperature stability while also showing meas
 
 ## Engineering Takeaways
 
-- Catalyst support strongly affected reaction behavior even when the
+- Catalyst support strongly affected reaction behavior even when the same Ni-Fe-MgO active formulation was used.
+- The SASOL-supported catalyst maintained essentially complete toluene conversion **down to approximately 600 °C**, compared with approximately 725 °C for the Carbo-supported catalyst.
+- SASOL promoted both methane reforming and water-gas-shift activity, strengthening the pathway toward **hydrogen production**; under the WGS condition, approximately 50% of H₂O was converted toward H₂ at 700 °C.
+- Carbo retained methane while still achieving high toluene conversion at elevated temperature, which may be advantageous when **renewable natural gas production** is preferred.
+- Mixed-feed testing showed reduced low-temperature activity, with the lower S/C ratio representing a likely contributing factor; time-on-stream testing also showed that catalyst deactivation remains an important design consideration.
+
+## References
+
+T. Baidya, R. J. Cattolica, and R. Seiser, "High Performance Ni-Fe-Mg Catalyst for Tar Removal in Producer Gas," *Applied Catalysis A: General*, vol. 558, pp. 131–139, 2018.
+
+R. Cattolica, Y.-C. Chou, R. Seiser, and M. Summers, "Tar Reforming Catalyst for Renewable Natural Gas or Hydrogen Production from Biomass Gasification," poster presentation, REGATEC 2026, Lund, Sweden, 2026.
+
+R. Cattolica, R. Seiser, and Y.-C. Chou, "Catalyst Support Effects on Tar Reforming for the Production of Renewable Natural Gas and Hydrogen," conference presentation, TCBiomass 2026, Denver, Colorado, 2026.
+
+R. J. Cattolica and T. Baidya, "High Tar Conversion Performance of a Ni-Fe-MgO Catalyst," U.S. Patent 12,594,544 B2, Apr. 7, 2026.
