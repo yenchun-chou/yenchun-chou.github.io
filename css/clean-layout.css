@@ -314,3 +314,9 @@ img[src*="co-conversion"] {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
+.article-cover-frame:has(img[src*="combined-conversion"]) {
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+}
