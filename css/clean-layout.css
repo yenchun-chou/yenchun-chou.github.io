@@ -38,11 +38,13 @@ hr {
   margin-bottom: 10px;
 }
 
+/* Default cover styling for all case studies */
+
 .article-cover-frame {
   margin: 0 0 26px;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
+  padding: 18px;
+  border-radius: 8px;
+  background: var(--thumb-bg);
   overflow: hidden;
 }
 
@@ -53,11 +55,9 @@ hr {
   max-height: 420px;
   height: auto;
   margin: 0 auto;
-  padding: 18px;
-  box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 4px;
   object-fit: contain;
-  background: var(--thumb-bg);
+  background: transparent;
 }
 
 .entry-row,
@@ -128,12 +128,12 @@ hr {
 
 @media screen and (max-width: 700px) {
   .article-cover-frame {
+    padding: 12px;
     margin-bottom: 22px;
   }
 
   .article-cover {
     max-height: 320px;
-    padding: 12px;
   }
 
   .entry-row,
@@ -314,4 +314,30 @@ img[src*="co-conversion"] {
   border: 0 !important;
   border-radius: 0 !important;
   box-shadow: none !important;
+}
+
+/* Toluene reforming case-study cover only */
+
+.project-toluene-steam-reforming .article-cover-frame {
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+.project-toluene-steam-reforming .article-cover {
+  padding: 0 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+}
+
+@media screen and (max-width: 700px) {
+  .project-toluene-steam-reforming .article-cover-frame {
+    padding: 0 !important;
+    background: transparent !important;
+  }
+
+  .project-toluene-steam-reforming .article-cover {
+    padding: 0 !important;
+    background: transparent !important;
+  }
 }
