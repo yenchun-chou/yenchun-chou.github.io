@@ -289,6 +289,16 @@ hr {
 }
 
 /* Toluene reforming result figures */
+
+p:has(> img[src*="individual-reforming"]),
+p:has(> img[src*="combined-conversion"]),
+p:has(> img[src*="co-conversion"]) {
+  background: transparent !important;
+  padding: 0 !important;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
 img[src*="individual-reforming"],
 img[src*="combined-conversion"],
 img[src*="co-conversion"] {
@@ -296,10 +306,11 @@ img[src*="co-conversion"] {
   width: 100%;
   max-width: 680px;
   height: auto;
-  margin: 24px auto 8px;
+  margin: 0 auto;
 
   background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
   padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
 }
