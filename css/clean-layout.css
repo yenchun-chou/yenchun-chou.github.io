@@ -287,3 +287,19 @@ hr {
     font-size: 14px;
   }
 }
+
+/* Toluene reforming result figures */
+img[src*="individual-reforming"],
+img[src*="combined-conversion"],
+img[src*="co-conversion"] {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin: 24px auto 8px;
+
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
