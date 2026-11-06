@@ -14,7 +14,7 @@ cover_alt: "Toluene and methane conversion under the combined-feed condition for
 thumbnail_alt: "Toluene and methane conversion under the combined-feed condition for SASOL and Carbo catalyst supports"
 label: "EXPERIMENTAL"
 role: "Reactor Testing & Catalyst Evaluation"
-technologies: [Fixed-Bed Reactor, Agilent 990 Micro GC, Catalyst Testing, Gas Analysis]
+technologies: [Fixed-Bed Reactor, LabVIEW, Agilent 990 Micro GC, Catalyst Testing, Gas Analysis]
 code: ""
 demo: ""
 paper: ""
