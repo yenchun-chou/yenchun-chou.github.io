@@ -6,11 +6,8 @@ navigation:
       url: "/about/"
     - title: "Projects"
       url: "/work/"
-    - title: "Writing"
-      url: "/writing/"
-    - title: "Archive"
-      url: "/archive/"
-  contact: "Contact"
+    - title: "Contact"
+      url: "www.linkedin.com/in/yen-chun-chou-b43852168"
   cv: "CV"
 
 about:
