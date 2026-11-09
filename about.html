@@ -1,3 +1,4 @@
+
 ---
 layout: site
 title: "About"
@@ -6,27 +7,37 @@ permalink: /about/
 ---
 
 <style>
-  .about-page .about-work-link {
+  .about-page .about-link {
     color: inherit;
     text-decoration: underline;
     text-decoration-color: rgba(128, 128, 128, 0.5);
-    text-decoration-thickness: 1px;
     text-underline-offset: 3px;
-    transition: text-decoration-color 0.2s ease;
   }
 
-  .about-page .about-work-link:hover,
-  .about-page .about-work-link:focus-visible {
+  .about-page .about-link:hover,
+  .about-page .about-link:focus-visible {
     text-decoration-color: currentColor;
     text-decoration-thickness: 2px;
   }
 
-  .about-page .about-cv-button {
+  .about-page .publication-item {
+    margin-bottom: 24px;
+  }
+
+  .about-page .publication-type {
+    margin-bottom: 7px;
+    color: var(--muted, #666);
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+
+  .about-page .about-resume-button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    padding: 11px 17px;
     margin-top: 8px;
+    padding: 11px 17px;
     border: 1px solid currentColor;
     border-radius: 6px;
     color: inherit;
@@ -37,22 +48,10 @@ permalink: /about/
     text-decoration: none;
   }
 
-  .about-page .about-cv-button:hover,
-  .about-page .about-cv-button:focus-visible {
+  .about-page .about-resume-button:hover,
+  .about-page .about-resume-button:focus-visible {
     background: rgba(128, 128, 128, 0.12);
     text-decoration: none;
-  }
-
-  .about-page .publication-item {
-    margin-bottom: 24px;
-  }
-
-  .about-page .publication-type {
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    color: var(--muted, #666);
-    margin-bottom: 7px;
   }
 </style>
 
@@ -66,8 +65,9 @@ permalink: /about/
     <h1 class="page-title">About me</h1>
 
     <p>
-      Mechanical Engineer (EIT) and PhD Candidate in Mechanical and Aerospace
-      Engineering at the University of California, Davis.
+      Mechanical Engineer (EIT) and PhD Candidate in
+      Mechanical and Aerospace Engineering at the
+      University of California, Davis.
       Expected graduation: December 2026.
     </p>
   </header>
@@ -76,225 +76,107 @@ permalink: /about/
     <h2>Background</h2>
 
     <p>
-      I work on thermal-fluid systems where simulation and hardware have to agree.
+      My work combines computational modeling and experimental
+      testing to improve thermal-fluid systems.
     </p>
 
     <p>
-      My PhD research investigates heat transfer, flow distribution, and
-      reactor performance in packed-bed methanol steam reformers.
-      I combine computational modeling with experimental validation
-      to understand transport limitations and evaluate passive
-      flow-disturbance designs.
+      My experience includes operating high-temperature fixed-bed
+      reactors at up to 800 °C as a visiting researcher at
+      UC San Diego and contributing to a 500 lb/hr
+      biomass-to-renewable-natural-gas pilot plant at West Biofuels.
     </p>
 
     <p>
-      My experience also includes operating high-temperature fixed-bed reactors
-      at temperatures up to 800 °C as a visiting researcher at UC San Diego,
-      and working on a 500 lb/hr biomass-to-renewable-natural-gas pilot plant
-      at West Biofuels.
-    </p>
-
-    <p>
-      I hold an MS and BS in Mechanical Engineering from National Taiwan
-      University of Science and Technology and passed the FE Mechanical
-      examination in 2026.
+      I hold an MS and BS in Mechanical Engineering from
+      National Taiwan University of Science and Technology
+      and passed the FE Mechanical examination in 2026.
     </p>
   </section>
 
-  <section>
-    <h2>PhD Research</h2>
 
-    <p>
-      <strong>
-        Heat Transfer Enhancement and Flow Management in
-        Packed-Bed Methanol Steam Reformers
-      </strong>
-    </p>
+<section>
+  <h2>PhD Research</h2>
 
-    <p>
-      Methanol steam reforming is an endothermic process in which heat must
-      be transferred from the reactor wall into a catalyst-packed bed.
-      Nonuniform flow and limited radial heat transfer can create
-      cooler regions near the centerline, reducing reactor performance.
-    </p>
+  <p>
+    <strong>
+      Coupled Heat and Mass Transfer, Reaction Modeling,
+      and Design Optimization of Packed-Bed Reactors
+    </strong>
+  </p>
 
-    <p>
-      My research examines whether passive disk-and-ring flow disturbers
-      can redistribute flow, improve radial heat transfer, and reduce
-      temperature nonuniformity without moving components.
-      I use CFD and reactor-scale thermal modeling to investigate
-      flow behavior, temperature distributions, and reaction performance.
-    </p>
+  <p>
+    My doctoral research investigates how fluid flow, heat and mass
+    transfer, and chemical reactions interact to determine the
+    performance of packed-bed methanol steam reformers.
+    The central challenge is improving heat delivery and reactant
+    transport within the catalyst bed while managing pressure drop,
+    methanol conversion, and hydrogen production.
+  </p>
 
-    <p>
-      A central part of this work is evaluating numerical predictions
-      against experimental measurements and examining how design parameters,
-      including disk diameter, ring geometry, spacing, and insert count,
-      affect reactor behavior.
-    </p>
+  <p>
+    <strong>Multiphysics CFD and reaction kinetics.</strong>
+    I developed a multi-region fluid-solid CFD model in OpenFOAM,
+    incorporating momentum, energy, and species transport with
+    Peppley Langmuir-Hinshelwood kinetics for methanol steam
+    reforming, water-gas shift, and methanol decomposition.
+    I adapted effective kinetic parameters to the KMA catalyst
+    and evaluated model predictions against experimental measurements
+    across multiple flow rates.
+  </p>
 
-    <p>
-      In related research with H₂ PowerTech, the team investigated the
-      relationship between methanol conversion, carbon monoxide (CO)
-      formation, and hydrogen production in reactors with different
-      geometries and operating conditions. This collaboration led
-      to my first-author publication in the
-      <em>International Journal of Hydrogen Energy</em> (2025).
-    </p>
+  <p>
+    <strong>Model verification and experimental validation.</strong>
+    My modeling work includes non-reacting heat-transfer
+    verification, reaction-kinetics evaluation, mesh convergence
+    assessment, and CFD-experiment comparisons.
+    I also programmed LabVIEW data acquisition with gas-analysis
+    instrumentation and used Python and MATLAB to analyze
+    reactor measurements and simulation results.
+  </p>
 
-    <p>
-      I also co-authored a review article in <em>Fuel</em> (2026),
-      examining approaches to enhance hydrogen production from
-      methanol steam reforming, with an emphasis on heat-transfer
-      limitations and reactor-scale enhancement strategies.
-    </p>
-  </section>
+  <p>
+    <strong>Parametric design and optimization.</strong>
+    I conducted a 52-case CFD investigation across four flow rates,
+    incorporating an L9 Taguchi design, additional comparison
+    configurations, and a baseline without flow disturbers.
+    The study examined how disk and ring dimensions, insert count,
+    and spacing influence flow redistribution, radial temperature
+    gradients, pressure drop, and overall reactor performance.
+  </p>
 
-  <section>
-    <h2>What I work on</h2>
+  <p>
+    <strong>Experimental performance and industry collaboration.</strong>
+    In related research with H₂ PowerTech, our team evaluated
+    methanol reformers with different aspect ratios and operating
+    conditions, investigating the relationships among conversion,
+    carbon monoxide formation, and hydrogen production.
+    This work contributed to reactor design and scale-up
+    considerations and resulted in my first-author publication
+    in the <em>International Journal of Hydrogen Energy</em> (2025).
+  </p>
+</section>
 
-    <p>
-      <strong>CFD and heat transfer:</strong>
-      I develop and evaluate thermal-fluid models using OpenFOAM and ANSYS Fluent,
-      including conjugate heat transfer, reaction kinetics, turbulence modeling,
-      and parametric geometry studies. My validation approach includes
-      mesh convergence analysis and comparison with experimental measurements.
-    </p>
-
-    <p>
-      <strong>Experimental systems:</strong>
-      My hands-on experience includes operating high-temperature reactor
-      test stands, acquiring thermocouple and gas-composition measurements,
-      LabVIEW/DAQ automation, mass flow controller calibration,
-      and troubleshooting gas-handling equipment.
-    </p>
-
-    <p>
-      <strong>Mechanical design:</strong>
-      I use SolidWorks and other CAD tools to translate thermal and fluid-flow
-      requirements into practical hardware, including reactor assemblies
-      and passive flow-disturber components.
-    </p>
-  </section>
-
-  <section>
-    <h2>Technical skills</h2>
-
-    <p>
-      <strong>Simulation:</strong>
-      OpenFOAM, ANSYS Fluent, conjugate heat transfer,
-      turbulence modeling, mesh convergence,
-      Grid Convergence Index (GCI)
-    </p>
-
-    <p>
-      <strong>Programming &amp; Data Acquisition:</strong>
-      Python, MATLAB, LabVIEW, DAQ
-    </p>
-
-    <p>
-      <strong>Mechanical Design &amp; CAD:</strong>
-      SolidWorks, AutoCAD, Creo
-    </p>
-
-    <p>
-      <strong>Experimental Methods:</strong>
-      Thermocouples, mass flow controller calibration,
-      Agilent 990 Micro GC, NOVA gas analyzer,
-      reactor testing and validation
-    </p>
-
-    <p>
-      <strong>Languages:</strong>
-      English, Mandarin Chinese
-    </p>
-  </section>
-
-  <section>
-    <h2>How I approach engineering problems</h2>
-
-    <p>
-      The design that performs best on one metric is not always the best
-      overall solution.
-    </p>
-
-    <p>
-      In my methanol reformer research, increasing wall temperature improved
-      conversion but also increased CO formation. Passive flow disturbers
-      reduced CO concentration from 4.5% to 1.6% while maintaining
-      comparable conversion and increasing hydrogen production.
-    </p>
-  </section>
-
-  <section>
-    <h2>Selected work</h2>
-
-    <p>
-      <strong>
-        <a class="about-work-link"
-           href="/entries/h2-powertech-methanol-reforming/">
-          Methanol Reformer Development with Passive Flow Disturbers
-        </a>
-      </strong>
-      — Experimental research on thermal behavior, CO formation,
-      and hydrogen production in packed-bed reformers.
-    </p>
-
-    <p>
-      <strong>
-        <a class="about-work-link"
-           href="/entries/cfd-packed-bed-reactor/">
-          CFD Analysis of Heat and Flow in a Packed-Bed Reactor
-        </a>
-      </strong>
-      — Numerical investigation of passive flow disturbance,
-      radial heat transfer, and temperature distribution
-      in packed-bed reformers.
-    </p>
-
-    <p>
-      <strong>
-        <a class="about-work-link"
-           href="/entries/liquid-cooling-cht/">
-          Liquid Cooling of High-Power Electronics
-        </a>
-      </strong>
-      — OpenFOAM-13 conjugate heat transfer validation
-      of a 400 W cold plate, including a three-level
-      mesh convergence study.
-    </p>
-
-    <p>
-      <strong>
-        <a class="about-work-link"
-           href="/entries/toluene-steam-reforming/">
-          Experimental Toluene Steam Reforming for Biomass Tar Removal
-        </a>
-      </strong>
-      — High-temperature fixed-bed reactor testing
-      and catalyst performance evaluation for biomass tar removal.
-    </p>
-  </section>
 
   <section>
     <h2>Publications</h2>
 
     <div class="publication-item">
       <p class="publication-type">
-        FIRST-AUTHOR JOURNAL ARTICLE · 2025
+        FIRST-AUTHOR RESEARCH ARTICLE · 2025
       </p>
 
       <p>
         <strong>Y.-C. Chou</strong>, A. Gómez-Hernández,
         K. K. Ochi, C. Agba, M. Horton, and P. A. Erickson.
-        "Analysis of carbon monoxide and hydrogen yield in steam
-        methanol reformation with passive flow disturbance."
+        "Analysis of carbon monoxide and hydrogen yield in
+        steam methanol reformation with passive flow disturbance."
         <em>International Journal of Hydrogen Energy</em>,
         vol. 157, article 150281, 2025.
       </p>
 
       <p>
-        <a class="about-work-link"
+        <a class="about-link"
            href="https://doi.org/10.1016/j.ijhydene.2025.150281"
            target="_blank"
            rel="noopener noreferrer">
@@ -317,7 +199,7 @@ permalink: /about/
       </p>
 
       <p>
-        <a class="about-work-link"
+        <a class="about-link"
            href="https://doi.org/10.1016/j.fuel.2026.139059"
            target="_blank"
            rel="noopener noreferrer">
@@ -328,20 +210,53 @@ permalink: /about/
   </section>
 
   <section>
-    <h2>Professional interests</h2>
+    <h2>Technical Skills</h2>
 
     <p>
-      I am pursuing engineering opportunities in thermal-fluid systems,
-      mechanical design, product development, and test and validation,
-      particularly roles that combine simulation with hands-on hardware
-      development.
+      <strong>CFD &amp; Simulation:</strong>
+      OpenFOAM, ANSYS Fluent, conjugate heat transfer,
+      turbulence modeling, reaction kinetics,
+      mesh convergence, Grid Convergence Index (GCI)
     </p>
 
     <p>
-      <a class="about-cv-button"
+      <strong>Programming &amp; Data Acquisition:</strong>
+      Python, MATLAB, LabVIEW, DAQ
+    </p>
+
+    <p>
+      <strong>Mechanical Design:</strong>
+      SolidWorks, AutoCAD, Creo
+    </p>
+
+    <p>
+      <strong>Experimental Methods:</strong>
+      Reactor testing, thermocouples, mass flow controller
+      calibration, gas analysis, Agilent 990 Micro GC,
+      NOVA gas analyzer
+    </p>
+
+    <p>
+      <strong>Languages:</strong>
+      English, Mandarin Chinese
+    </p>
+  </section>
+
+  <section>
+    <h2>Professional Interests</h2>
+
+    <p>
+      I am pursuing engineering opportunities in thermal-fluid
+      systems, mechanical design, product development,
+      and test and validation, particularly roles that combine
+      computational analysis with hands-on hardware development.
+    </p>
+
+    <p>
+      <a class="about-resume-button"
          href="/files/cv.pdf"
-         download="Yen_Chun_Chou_CV.pdf">
-        Download CV (PDF)
+         download="Yen_Chun_Chou_Resume.pdf">
+        Download Resume (PDF)
         <span aria-hidden="true">↓</span>
       </a>
     </p>
