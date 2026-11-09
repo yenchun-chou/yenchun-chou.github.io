@@ -6,8 +6,6 @@ permalink: /about/
 ---
 
 <style>
-  /* About page: selected project links */
-
   .about-page .about-work-link {
     color: inherit;
     text-decoration: underline;
@@ -23,8 +21,6 @@ permalink: /about/
     text-decoration-thickness: 2px;
   }
 
-  /* About page: CV download button */
-
   .about-page .about-cv-button {
     display: inline-flex;
     align-items: center;
@@ -39,28 +35,36 @@ permalink: /about/
     font-weight: 600;
     line-height: 1.4;
     text-decoration: none;
-    transition: background-color 0.2s ease,
-                transform 0.2s ease;
   }
 
   .about-page .about-cv-button:hover,
   .about-page .about-cv-button:focus-visible {
     background: rgba(128, 128, 128, 0.12);
-    transform: translateY(-1px);
     text-decoration: none;
   }
 
-  .about-page .about-cv-button .arrow {
-    font-size: 17px;
-    line-height: 1;
+  .about-page .publication-item {
+    margin-bottom: 24px;
+  }
+
+  .about-page .publication-type {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    color: var(--muted, #666);
+    margin-bottom: 7px;
   }
 </style>
 
 <article class="content-page about-page">
 
   <header class="page-header">
-    <p class="post-date">MECHANICAL ENGINEERING · THERMAL-FLUID SYSTEMS</p>
+    <p class="post-date">
+      MECHANICAL ENGINEERING · THERMAL-FLUID SYSTEMS
+    </p>
+
     <h1 class="page-title">About me</h1>
+
     <p>
       Mechanical Engineer (EIT) and PhD Candidate in Mechanical and Aerospace
       Engineering at the University of California, Davis.
@@ -76,11 +80,11 @@ permalink: /about/
     </p>
 
     <p>
-      In collaboration with H₂ PowerTech, I studied how passive disk-and-ring
-      flow disturbers affect heat transfer, carbon monoxide (CO) formation,
-      and hydrogen production in packed-bed methanol steam reformers.
-      This work led to a first-author publication in the
-      <em>International Journal of Hydrogen Energy</em> (2025).
+      My PhD research investigates heat transfer, flow distribution, and
+      reactor performance in packed-bed methanol steam reformers.
+      I combine computational modeling with experimental validation
+      to understand transport limitations and evaluate passive
+      flow-disturbance designs.
     </p>
 
     <p>
@@ -94,6 +98,55 @@ permalink: /about/
       I hold an MS and BS in Mechanical Engineering from National Taiwan
       University of Science and Technology and passed the FE Mechanical
       examination in 2026.
+    </p>
+  </section>
+
+  <section>
+    <h2>PhD Research</h2>
+
+    <p>
+      <strong>
+        Heat Transfer Enhancement and Flow Management in
+        Packed-Bed Methanol Steam Reformers
+      </strong>
+    </p>
+
+    <p>
+      Methanol steam reforming is an endothermic process in which heat must
+      be transferred from the reactor wall into a catalyst-packed bed.
+      Nonuniform flow and limited radial heat transfer can create
+      cooler regions near the centerline, reducing reactor performance.
+    </p>
+
+    <p>
+      My research examines whether passive disk-and-ring flow disturbers
+      can redistribute flow, improve radial heat transfer, and reduce
+      temperature nonuniformity without moving components.
+      I use CFD and reactor-scale thermal modeling to investigate
+      flow behavior, temperature distributions, and reaction performance.
+    </p>
+
+    <p>
+      A central part of this work is evaluating numerical predictions
+      against experimental measurements and examining how design parameters,
+      including disk diameter, ring geometry, spacing, and insert count,
+      affect reactor behavior.
+    </p>
+
+    <p>
+      In related research with H₂ PowerTech, the team investigated the
+      relationship between methanol conversion, carbon monoxide (CO)
+      formation, and hydrogen production in reactors with different
+      geometries and operating conditions. This collaboration led
+      to my first-author publication in the
+      <em>International Journal of Hydrogen Energy</em> (2025).
+    </p>
+
+    <p>
+      I also co-authored a review article in <em>Fuel</em> (2026),
+      examining approaches to enhance hydrogen production from
+      methanol steam reforming, with an emphasis on heat-transfer
+      limitations and reactor-scale enhancement strategies.
     </p>
   </section>
 
@@ -130,7 +183,8 @@ permalink: /about/
     <p>
       <strong>Simulation:</strong>
       OpenFOAM, ANSYS Fluent, conjugate heat transfer,
-      turbulence modeling, mesh convergence, Grid Convergence Index (GCI)
+      turbulence modeling, mesh convergence,
+      Grid Convergence Index (GCI)
     </p>
 
     <p>
@@ -184,7 +238,6 @@ permalink: /about/
       </strong>
       — Experimental research on thermal behavior, CO formation,
       and hydrogen production in packed-bed reformers.
-      Published in the <em>International Journal of Hydrogen Energy</em>.
     </p>
 
     <p>
@@ -224,6 +277,57 @@ permalink: /about/
   </section>
 
   <section>
+    <h2>Publications</h2>
+
+    <div class="publication-item">
+      <p class="publication-type">
+        FIRST-AUTHOR JOURNAL ARTICLE · 2025
+      </p>
+
+      <p>
+        <strong>Y.-C. Chou</strong>, A. Gómez-Hernández,
+        K. K. Ochi, C. Agba, M. Horton, and P. A. Erickson.
+        "Analysis of carbon monoxide and hydrogen yield in steam
+        methanol reformation with passive flow disturbance."
+        <em>International Journal of Hydrogen Energy</em>,
+        vol. 157, article 150281, 2025.
+      </p>
+
+      <p>
+        <a class="about-work-link"
+           href="https://doi.org/10.1016/j.ijhydene.2025.150281"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read publication ↗
+        </a>
+      </p>
+    </div>
+
+    <div class="publication-item">
+      <p class="publication-type">
+        CO-AUTHORED REVIEW ARTICLE · 2026
+      </p>
+
+      <p>
+        C. Agba, A. Gómez-Hernández,
+        <strong>Y.-C. Chou</strong>, and P. A. Erickson.
+        "Hydrogen production via methanol steam reforming:
+        a review of H₂ production enhancement methods."
+        <em>Fuel</em>, vol. 421, article 139059, 2026.
+      </p>
+
+      <p>
+        <a class="about-work-link"
+           href="https://doi.org/10.1016/j.fuel.2026.139059"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read publication ↗
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section>
     <h2>Professional interests</h2>
 
     <p>
@@ -234,10 +338,11 @@ permalink: /about/
     </p>
 
     <p>
-      <a class="about-cv-button" href="/files/cv.pdf"
+      <a class="about-cv-button"
+         href="/files/cv.pdf"
          download="Yen_Chun_Chou_CV.pdf">
         Download CV (PDF)
-        <span class="arrow" aria-hidden="true">↓</span>
+        <span aria-hidden="true">↓</span>
       </a>
     </p>
   </section>
