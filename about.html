@@ -5,6 +5,57 @@ lang: en
 permalink: /about/
 ---
 
+<style>
+  /* About page: selected project links */
+
+  .about-page .about-work-link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: rgba(128, 128, 128, 0.5);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease;
+  }
+
+  .about-page .about-work-link:hover,
+  .about-page .about-work-link:focus-visible {
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 2px;
+  }
+
+  /* About page: CV download button */
+
+  .about-page .about-cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 17px;
+    margin-top: 8px;
+    border: 1px solid currentColor;
+    border-radius: 6px;
+    color: inherit;
+    background: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+  }
+
+  .about-page .about-cv-button:hover,
+  .about-page .about-cv-button:focus-visible {
+    background: rgba(128, 128, 128, 0.12);
+    transform: translateY(-1px);
+    text-decoration: none;
+  }
+
+  .about-page .about-cv-button .arrow {
+    font-size: 17px;
+    line-height: 1;
+  }
+</style>
+
 <article class="content-page about-page">
 
   <header class="page-header">
@@ -22,8 +73,6 @@ permalink: /about/
 
     <p>
       I work on thermal-fluid systems where simulation and hardware have to agree.
-      My PhD research focuses on heat transfer, fluid flow, and reactor performance,
-      combining computational modeling with experimental validation.
     </p>
 
     <p>
@@ -128,7 +177,8 @@ permalink: /about/
 
     <p>
       <strong>
-        <a href="/entries/h2-powertech-methanol-reforming/">
+        <a class="about-work-link"
+           href="/entries/h2-powertech-methanol-reforming/">
           Methanol Reformer Development with Passive Flow Disturbers
         </a>
       </strong>
@@ -139,7 +189,8 @@ permalink: /about/
 
     <p>
       <strong>
-        <a href="/entries/cfd-packed-bed-reactor/">
+        <a class="about-work-link"
+           href="/entries/cfd-packed-bed-reactor/">
           CFD Analysis of Heat and Flow in a Packed-Bed Reactor
         </a>
       </strong>
@@ -150,7 +201,8 @@ permalink: /about/
 
     <p>
       <strong>
-        <a href="/entries/liquid-cooling-cht/">
+        <a class="about-work-link"
+           href="/entries/liquid-cooling-cht/">
           Liquid Cooling of High-Power Electronics
         </a>
       </strong>
@@ -161,7 +213,8 @@ permalink: /about/
 
     <p>
       <strong>
-        <a href="/entries/toluene-steam-reforming/">
+        <a class="about-work-link"
+           href="/entries/toluene-steam-reforming/">
           Experimental Toluene Steam Reforming for Biomass Tar Removal
         </a>
       </strong>
@@ -181,7 +234,11 @@ permalink: /about/
     </p>
 
     <p>
-      <a href="/files/cv.pdf">Download my CV</a>
+      <a class="about-cv-button" href="/files/cv.pdf"
+         download="Yen_Chun_Chou_CV.pdf">
+        Download CV (PDF)
+        <span class="arrow" aria-hidden="true">↓</span>
+      </a>
     </p>
   </section>
 
