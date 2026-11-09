@@ -62,7 +62,7 @@ For this comparison, adding flow disturbers changed the performance metrics as f
 
 - **CO concentration:** 4.5% → **1.6%**
 - **Hydrogen production:** 8.87 → **9.6 kg/day per reactor**
-- **Methanol conversion:** 98.35% → **96.31%**
+- **Methanol conversion:** 96.31% → **98.35%**
 - **Hydrogen yield efficiency:** 93.9% → **94.7%**
 
 Although conversion was modestly lower in this paired comparison, the reduced CO concentration and higher hydrogen production were favorable for the intended hydrogen-producing application. The experiment illustrates why evaluating conversion in isolation can be misleading.
