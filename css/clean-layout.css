@@ -173,85 +173,10 @@ hr {
   margin-bottom: 0;
 }
 
-/* Tablet */
+/* Homepage profile alignment */
 
-@media screen and (max-width: 700px) {
-  .case-study-cover {
-    padding: 12px;
-    margin-bottom: 22px;
-  }
-
-  .project-hero {
-    max-height: 320px;
-  }
-
-  .project-item {
-    grid-template-columns: 135px minmax(0, 1fr);
-    gap: 18px;
-    padding: 24px 0;
-  }
-
-  .project-item .item-thumb {
-    height: 95px;
-  }
-
-  .project-item .item-title {
-    font-size: 18px;
-  }
-
-  .project-item .item-heading {
-    gap: 14px;
-  }
-
-  .writing-item {
-    grid-template-columns: 85px minmax(0, 1fr) 24px;
-    gap: 16px;
-  }
-
-  .writing-item.writing-no-image {
-    grid-template-columns: 85px minmax(0, 1fr) 24px;
-  }
-}
-
-/* Mobile */
-
-@media screen and (max-width: 460px) {
-  .project-item {
-    display: block;
-    padding: 26px 0;
-  }
-
-  .project-item > a:first-child {
-    margin-bottom: 16px;
-  }
-
-  .project-item .item-thumb {
-    width: 100%;
-    height: 180px;
-  }
-
-  .project-item .item-heading {
-    grid-template-columns: minmax(0, 1fr) auto;
-    gap: 12px;
-  }
-
-  .writing-item,
-  .writing-item.writing-no-image {
-    grid-template-columns: minmax(0, 1fr) 24px;
-    gap: 12px;
-  }
-
-  .writing-item .entry-side {
-    grid-column: 1 / -1;
-  }
-
-  .writing-item .entry-main {
-    grid-column: 1;
-  }
-
-  .writing-item > .writing-arrow {
-    grid-column: 2;
-  }
+.profile {
+  justify-content: flex-start;
 }
 
 /* Featured projects on homepage */
@@ -270,24 +195,38 @@ hr {
   margin: 0 0 64px;
 }
 
+/* Consistent thumbnail containers */
+
 .featured-project-image-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  aspect-ratio: 16 / 10;
+  box-sizing: border-box;
   margin: 0;
-  overflow: hidden;
+  padding: 14px;
+  background: var(--thumb-bg, #f4f5f6);
+  border: 1px solid var(--border, #dedede);
   border-radius: 6px;
+  overflow: hidden;
 }
 
 .featured-project-image {
   display: block;
   width: 100%;
-  height: auto;
-  max-height: 320px;
+  height: 100%;
+  max-height: 100%;
   object-fit: contain;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .featured-project-content {
   max-width: 720px;
+  min-width: 0;
 }
 
 .featured-project-role {
@@ -339,29 +278,6 @@ hr {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 700px) {
-  .featured-project {
-    display: block;
-    margin-bottom: 48px;
-  }
-
-  .featured-project-image-link {
-    margin-bottom: 18px;
-  }
-
-  .featured-project-image {
-    max-height: 320px;
-  }
-
-  .featured-project-title {
-    font-size: 22px;
-  }
-
-  .featured-project-description {
-    font-size: 14px;
-  }
-}
-
 /* Toluene reforming result figures */
 
 p:has(> img[src*="individual-reforming"]),
@@ -405,14 +321,114 @@ img[src*="co-conversion"] {
   box-shadow: none !important;
 }
 
+/* Tablet and mobile */
+
 @media screen and (max-width: 700px) {
-  .project-toluene-steam-reforming .case-study-cover {
-    padding: 0 !important;
-    background: transparent !important;
+  .case-study-cover {
+    padding: 12px;
+    margin-bottom: 22px;
   }
 
+  .project-hero {
+    max-height: 320px;
+  }
+
+  .project-item {
+    grid-template-columns: 135px minmax(0, 1fr);
+    gap: 18px;
+    padding: 24px 0;
+  }
+
+  .project-item .item-thumb {
+    height: 95px;
+  }
+
+  .project-item .item-title {
+    font-size: 18px;
+  }
+
+  .project-item .item-heading {
+    gap: 14px;
+  }
+
+  .writing-item,
+  .writing-item.writing-no-image {
+    grid-template-columns: 85px minmax(0, 1fr) 24px;
+    gap: 16px;
+  }
+
+  .featured-projects {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .featured-project {
+    display: block;
+    margin-bottom: 48px;
+  }
+
+  .featured-project-image-link {
+    margin-bottom: 18px;
+    padding: 12px;
+  }
+
+  .featured-project-image {
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .featured-project-title {
+    font-size: 22px;
+  }
+
+  .featured-project-description {
+    font-size: 14px;
+  }
+
+  .project-toluene-steam-reforming .case-study-cover,
   .project-toluene-steam-reforming .project-hero {
     padding: 0 !important;
     background: transparent !important;
+  }
+}
+
+/* Small mobile screens */
+
+@media screen and (max-width: 460px) {
+  .project-item {
+    display: block;
+    padding: 26px 0;
+  }
+
+  .project-item > a:first-child {
+    margin-bottom: 16px;
+  }
+
+  .project-item .item-thumb {
+    width: 100%;
+    height: 180px;
+  }
+
+  .project-item .item-heading {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+  }
+
+  .writing-item,
+  .writing-item.writing-no-image {
+    grid-template-columns: minmax(0, 1fr) 24px;
+    gap: 12px;
+  }
+
+  .writing-item .entry-side {
+    grid-column: 1 / -1;
+  }
+
+  .writing-item .entry-main {
+    grid-column: 1;
+  }
+
+  .writing-item > .writing-arrow {
+    grid-column: 2;
   }
 }
