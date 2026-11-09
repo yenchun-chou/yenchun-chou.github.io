@@ -1,3 +1,4 @@
+
 ---
 title: "Experimental Methanol Reformer Development with Passive Flow Disturbers"
 type: project
@@ -20,6 +21,121 @@ demo: ""
 paper: "https://doi.org/10.1016/j.ijhydene.2025.150281"
 excerpt: "Industry-collaborative methanol reformer research: CO decreased from 4.5% to 1.6%, while hydrogen output increased from 8.87 to 9.6 kg/day in a two-inch reactor."
 ---
+
+<style>
+/* H2 PowerTech project-only layouts */
+
+.h2pt-wide {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1000px, calc(100vw - 48px));
+  max-width: none;
+  margin: 26px 0 20px;
+}
+
+.h2pt-figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  column-gap: 22px;
+  row-gap: 22px;
+}
+
+.h2pt-figures figure {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  width: 100%;
+}
+
+.h2pt-figures img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.h2pt-figures figcaption {
+  font-size: 13px;
+  line-height: 1.55;
+  margin-top: 10px;
+  color: var(--muted, #666);
+}
+
+.h2pt-table-wrap {
+  overflow-x: auto;
+  width: 100%;
+  margin: 10px 0 16px;
+}
+
+.h2pt-table {
+  width: 100%;
+  min-width: 660px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 14px;
+  font-variant-numeric: tabular-nums;
+  color: inherit;
+}
+
+.h2pt-table th,
+.h2pt-table td {
+  text-align: right;
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(128,128,128,.24);
+  white-space: nowrap;
+}
+
+.h2pt-table th:first-child,
+.h2pt-table td:first-child {
+  text-align: left;
+  font-weight: 600;
+}
+
+.h2pt-table thead th {
+  background: rgba(128,128,128,.1);
+  font-weight: 700;
+  border-top: 1px solid rgba(128,128,128,.24);
+  border-bottom: 2px solid rgba(128,128,128,.4);
+}
+
+.h2pt-table tbody tr.highlight {
+  background: rgba(128,128,128,.12);
+  font-weight: 700;
+}
+
+.h2pt-note {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted, #666);
+}
+
+@media (max-width: 720px) {
+  .h2pt-wide {
+    position: static;
+    left: auto;
+    transform: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+  }
+
+  .h2pt-figures {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .h2pt-table {
+    font-size: 13px;
+  }
+}
+</style>
 
 This study was conducted at UC Davis in collaboration with **H₂ PowerTech** and published as my first-author paper in the *International Journal of Hydrogen Energy* (2025). We investigated how passive disk-and-ring flow disturbers affect thermal behavior, methanol conversion, carbon monoxide (CO) formation, and hydrogen production in packed-bed steam reformers.
 
@@ -63,14 +179,63 @@ The reactor used independently controlled heating zones rather than a uniform wa
 
 For the **2-inch reactor**, four zone-specific temperature schedules were evaluated: reference, nominal +20 °C, +40 °C, and +60 °C.
 
-| Condition | Zone 1 | Zone 2 | Zone 3 | Zone 4 | Zone 5 | Zone 6 |
-|:---|---:|---:|---:|---:|---:|---:|
-| Reference | 475 | 450 | 430 | 420 | 400 | 400 |
-| +20 °C | 500 | 470 | 450 | 440 | 420 | 420 |
-| **+40 °C** | **520** | **490** | **470** | **460** | **440** | **440** |
-| +60 °C | 540 | 510 | 490 | 480 | 460 | 460 |
+<div class="h2pt-wide">
+<div class="h2pt-table-wrap">
+<table class="h2pt-table">
+<thead>
+<tr>
+<th>Condition</th>
+<th>Zone 1</th>
+<th>Zone 2</th>
+<th>Zone 3</th>
+<th>Zone 4</th>
+<th>Zone 5</th>
+<th>Zone 6</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reference</td>
+<td>475</td>
+<td>450</td>
+<td>430</td>
+<td>420</td>
+<td>400</td>
+<td>400</td>
+</tr>
+<tr>
+<td>+20 °C</td>
+<td>500</td>
+<td>470</td>
+<td>450</td>
+<td>440</td>
+<td>420</td>
+<td>420</td>
+</tr>
+<tr class="highlight">
+<td>+40 °C</td>
+<td>520</td>
+<td>490</td>
+<td>470</td>
+<td>460</td>
+<td>440</td>
+<td>440</td>
+</tr>
+<tr>
+<td>+60 °C</td>
+<td>540</td>
+<td>510</td>
+<td>490</td>
+<td>480</td>
+<td>460</td>
+<td>460</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 
-*All temperatures are in °C. Heater settings from Table 3, Chou et al. (2025). The stated increments are nominal; actual temperature differences are zone-dependent.*
+*All temperatures are in °C. Heater schedules from Table 3, Chou et al. (2025). The specified increments are nominal and vary slightly between individual zones.*
 
 The **+40 °C condition** referenced in the following performance comparison corresponds to the highlighted heater schedule, not a single uniform reactor-wall temperature.
 
@@ -88,14 +253,14 @@ Together, these metrics characterize reactor performance more completely than me
 
 ### Effect of Flow Rate on Conversion and CO
 
-<div style="display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;margin:20px 0;">
-  <figure style="flex:1 1 45%;min-width:200px;margin:0;">
-    <img src="/images/projects/h2-powertech-methanol-reforming/conversion-vs-flow.png" alt="Methanol conversion versus pump mass flow rate in the two-inch reactor" style="display:block;width:100%;height:auto;">
-    <figcaption style="font-size:12px;line-height:1.5;margin-top:8px;">(a) Methanol conversion versus pump mass flow rate.</figcaption>
+<div class="h2pt-wide h2pt-figures">
+  <figure>
+    <img src="/images/projects/h2-powertech-methanol-reforming/conversion-vs-flow.png" alt="Methanol conversion versus pump mass flow rate in the two-inch reactor">
+    <figcaption>(a) Methanol conversion versus pump mass flow rate.</figcaption>
   </figure>
-  <figure style="flex:1 1 45%;min-width:200px;margin:0;">
-    <img src="/images/projects/h2-powertech-methanol-reforming/co-vs-flow.png" alt="Carbon monoxide concentration versus pump mass flow rate in the two-inch reactor" style="display:block;width:100%;height:auto;">
-    <figcaption style="font-size:12px;line-height:1.5;margin-top:8px;">(b) CO concentration versus pump mass flow rate.</figcaption>
+  <figure>
+    <img src="/images/projects/h2-powertech-methanol-reforming/co-vs-flow.png" alt="Carbon monoxide concentration versus pump mass flow rate in the two-inch reactor">
+    <figcaption>(b) CO concentration versus pump mass flow rate.</figcaption>
   </figure>
 </div>
 
@@ -105,7 +270,7 @@ The experimental results demonstrate the relationship between reactor temperatur
 
 Raising wall temperature without flow disturbance can recover methanol conversion but also increase CO formation. Passive flow disturbance provides an additional mechanism for managing this relationship through internal flow redistribution.
 
-The effect depends on the operating flow rate and heating configuration, highlighting the importance of optimizing reactor performance over a range of operating conditions.
+The effect depends on the operating flow rate and heating configuration, highlighting the importance of evaluating reactor performance over a range of operating conditions.
 
 ### Reactor Size Influenced the Benefit
 
@@ -119,7 +284,7 @@ For the **1.5-inch reactor** at the reference-temperature condition:
 
 These relatively small differences contrast with the substantial CO reduction observed in the 2-inch reactor comparison.
 
-This result suggests that passive-insert effectiveness depends on reactor geometry, aspect ratio, and operating conditions.
+This result demonstrates that passive-insert effectiveness depends on reactor geometry, aspect ratio, and operating conditions.
 
 ## Thermal Management
 
@@ -127,14 +292,14 @@ This result suggests that passive-insert effectiveness depends on reactor geomet
 
 The following temperature maps compare the **1.5-inch reactor** without flow disturbers at approximately **4.0 LHSV** and with flow disturbers at approximately **3.8 LHSV**.
 
-<div style="display:flex;gap:12px;align-items:flex-start;flex-wrap:wrap;margin:20px 0;">
-  <figure style="flex:1 1 45%;min-width:200px;margin:0;">
-    <img src="/images/projects/h2-powertech-methanol-reforming/temperature-without-disturbers.png" alt="Temperature distribution without flow disturbers" style="display:block;width:100%;height:auto;">
-    <figcaption style="font-size:12px;line-height:1.5;margin-top:8px;">(a) Without flow disturbers, approximately 4.0 LHSV.</figcaption>
+<div class="h2pt-wide h2pt-figures">
+  <figure>
+    <img src="/images/projects/h2-powertech-methanol-reforming/temperature-without-disturbers.png" alt="Temperature distribution without flow disturbers in the 1.5-inch reactor">
+    <figcaption>(a) Without flow disturbers, approximately 4.0 LHSV.</figcaption>
   </figure>
-  <figure style="flex:1 1 45%;min-width:200px;margin:0;">
-    <img src="/images/projects/h2-powertech-methanol-reforming/temperature-with-disturbers.png" alt="Temperature distribution with flow disturbers" style="display:block;width:100%;height:auto;">
-    <figcaption style="font-size:12px;line-height:1.5;margin-top:8px;">(b) With flow disturbers, approximately 3.8 LHSV.</figcaption>
+  <figure>
+    <img src="/images/projects/h2-powertech-methanol-reforming/temperature-with-disturbers.png" alt="Temperature distribution with flow disturbers in the 1.5-inch reactor">
+    <figcaption>(b) With flow disturbers, approximately 3.8 LHSV.</figcaption>
   </figure>
 </div>
 
