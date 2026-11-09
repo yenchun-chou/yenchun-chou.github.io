@@ -10,97 +10,95 @@ year: 2025
 image: "/images/projects/h2-powertech-methanol-reforming/performance-summary.svg"
 thumbnail: "/images/projects/h2-powertech-methanol-reforming/performance-summary.svg"
 cover: "/images/projects/h2-powertech-methanol-reforming/performance-summary.svg"
-cover_alt: "Two-inch methanol reformer performance comparison with and without passive flow disturbers"
-thumbnail_alt: "CO reduction and hydrogen production improvement with passive flow disturbers"
+cover_alt: "Comparison of CO concentration, hydrogen production, and methanol conversion in a two-inch reformer"
+thumbnail_alt: "CO reduction and hydrogen production with passive flow disturbers"
 label: "PUBLISHED RESEARCH"
-role: "Experimental Reactor Development & First-Author Paper"
-technologies: [SolidWorks, Reactor Testing, Thermal Management, Gas Analysis]
+role: "First-Author Research · Experimental Analysis & Visualization"
+technologies: [SolidWorks, Reactor Testing, Heat Transfer, Gas Analysis, LabVIEW, DAQ]
 code: ""
 demo: ""
 paper: "https://doi.org/10.1016/j.ijhydene.2025.150281"
-excerpt: "Industry-collaborative methanol reformer research that reduced CO concentration from 4.5% to 1.6% and increased hydrogen production from 8.87 to 9.6 kg/day in a two-inch reactor comparison."
+excerpt: "Industrial-collaborative methanol reformer research: CO concentration decreased from 4.5% to 1.6%, while hydrogen output increased from 8.87 to 9.6 kg/day in a two-inch reactor."
 ---
 
-This project was conducted at UC Davis in collaboration with **H₂ PowerTech** and led to my first-author publication in the *International Journal of Hydrogen Energy* (2025). The work examined whether passive disk-and-ring flow disturbers could improve the performance of packed-bed methanol steam reformers without requiring moving components.
+This study was conducted at UC Davis in collaboration with **H₂ PowerTech** and published as my first-author paper in the *International Journal of Hydrogen Energy* (2025). We investigated how passive disk-and-ring flow disturbers affect thermal behavior, methanol conversion, carbon monoxide (CO) formation, and hydrogen production in packed-bed steam reformers.
 
-My contributions included modeling reactor assemblies in SolidWorks, building and experimentally testing reformers with two aspect ratios, analyzing thermal and gas-composition measurements, and communicating the results in the published paper.
+My documented first-author contributions included technical visualization, manuscript preparation, and interpretation and communication of the experimental results in collaboration with the research team.
 
 ## Engineering Problem
 
-Methanol steam reforming is an endothermic process. Heat must travel from the reactor wall into a catalyst-packed bed, so temperature differences across the bed can leave regions with incomplete conversion. Increasing the wall temperature can improve conversion, but it can also increase carbon monoxide (CO) formation.
+Methanol steam reforming is an endothermic process. Heat must be transferred from the externally heated reactor wall toward the center of the catalyst bed. Local cold regions can reduce conversion, whereas raising reactor-wall temperatures can increase unwanted **CO formation**.
 
-This trade-off matters for hydrogen production: CO is an undesirable constituent of reformate intended for downstream fuel-cell processing, and removing CO through methanation would consume some of the hydrogen produced.
-
-The engineering objective was therefore to evaluate **methanol conversion, CO concentration, and hydrogen production together**, rather than optimize conversion alone.
+The design question was whether **passive flow redistribution** could improve useful hydrogen production and conversion while controlling CO, rather than relying on additional wall heating alone.
 
 ## Reactor Design and Experimental Approach
 
-The study compared two stainless-steel packed-bed reactor designs with nominal diameters of **1.5 inches** and **2 inches**. Both used externally heated catalyst beds and were tested with and without passive flow disturbers made from alternating disk and ring elements.
+The study compared two stainless-steel reformers: a **nominal 1.5-inch reactor divided into eight zones** and a **nominal 2-inch reactor divided into six zones**. Both were evaluated with and without passive disk-and-ring inserts to examine the effects of internal flow redistribution.
 
-The experiments used a methanol–water feed, electric vaporizers and a superheater, controlled reactor-wall heating, thermocouples along the wall and centerline, condensation-based measurements for methanol conversion, and a **NOVA 7904CM** gas analyzer for the dry product stream.
+![Original reactor schematics for the 1.5-inch and 2-inch packed-bed reformers](/images/projects/h2-powertech-methanol-reforming/reactor-configurations.png)
 
-Important experimental elements included:
+*Reactor configurations and heating zones, from the original research figure supplied for this project (not to scale).*
 
-- **Reactor geometries:** Nominal 1.5-inch and 2-inch diameter packed beds
-- **Passive inserts:** Disk-and-ring elements distributed through reactor zones
-- **Feed preparation:** Methanol–water premix at a 1.1:1 water-to-methanol molar ratio
-- **Thermal measurements:** Axial wall and centerline thermocouples
-- **Gas measurements:** H₂, CO, CO₂, and CH₄ concentrations
-- **Comparison variables:** Flow rate, wall-temperature configuration, and the presence or absence of disturbers
+The experimental system used a **1.1:1 water-to-methanol molar feed**, electrically heated vaporizers, a superheater, temperature-controlled reactor heating zones, and downstream condensation and gas analysis. Thermocouples monitored temperatures along the reactor wall and centerline, while a **NOVA 7904CM** analyzer measured dry reformate gas composition.
 
-The purpose of the inserts was to redistribute flow between the wall and the core, reducing thermal nonuniformity while preserving practical reactor operation.
+![Original experimental system schematic showing feed preparation, reactor, condenser, and gas analyzer](/images/projects/h2-powertech-methanol-reforming/experimental-setup.png)
+
+*Steam reforming test system, from the original experimental setup schematic supplied for this project.*
+
+The **+40 °C wall-temperature configuration** referenced below is the paper's elevated, zone-specific heater schedule relative to its reference condition; it does not mean the entire reactor was held at one uniform temperature.
 
 ## Key Results
 
-### CO Reduction and Hydrogen Production in the 2-Inch Reactor
+### Two-Inch Reactor: Methanol Conversion, CO, and Hydrogen Production
 
-![Two-inch reactor performance comparison with and without flow disturbers](/images/projects/h2-powertech-methanol-reforming/performance-summary.svg)
+For the reported two-inch reactor comparison at approximately **83 g/min**, using the +40 °C wall-temperature schedule, the compared performance values were:
 
-*Performance comparison of the 2-inch methanol reformer with and without passive flow disturbers under the +40 °C wall-temperature configuration.*
+- **CO concentration:** 4.5% without → **1.6% with disturbers** (−2.9 percentage points)
+- **Hydrogen production:** 8.87 without → **9.6 kg/day per reactor with disturbers** (+8.2%)
+- **Methanol conversion:** 96.31% without → **98.35% with disturbers** (+2.04 percentage points)
 
-For this comparison, adding flow disturbers changed the performance metrics as follows:
+The performance comparison is most meaningful when conversion, product gas composition, and useful hydrogen production are considered together.
 
-- **CO concentration:** 4.5% → **1.6%**
-- **Hydrogen production:** 8.87 → **9.6 kg/day per reactor**
-- **Methanol conversion:** 96.31% → **98.35%**
-- **Hydrogen yield efficiency:** 93.9% → **94.7%**
+![Original conversion versus mass flow rate plot for the two-inch reformer](/images/projects/h2-powertech-methanol-reforming/conversion-vs-flow.png)
 
-In this comparison, passive flow disturbers increased methanol conversion by **2.04 percentage points**, reduced CO concentration by **2.9 percentage points**, and increased hydrogen production by approximately **8.2%**.
+*Two-inch reactor methanol conversion versus pump mass flow rate across wall-temperature conditions. Original experimental plot supplied for this project; see Fig. 7(c) in Chou et al. (2025).*
 
-These results demonstrate how passive flow management can improve multiple reactor performance metrics simultaneously, providing benefits beyond simply increasing reactor-wall temperature.
+![Original CO concentration versus mass flow rate plot for the two-inch reformer](/images/projects/h2-powertech-methanol-reforming/co-vs-flow.png)
 
-### Reactor Size Influenced the Benefit of Flow Disturbance
+*Two-inch reactor CO concentration versus pump mass flow rate. The plot's arrows illustrate the temperature-dependent changes. Original experimental plot supplied for this project; see Fig. 7(d) in Chou et al. (2025).*
 
-The benefit was not uniform across reactor geometries.
+Across the operating range, raising wall temperatures without inserts could recover conversion but also increase CO. Passive flow disturbance provided another means to influence heat distribution and product selectivity. The size of the benefit depended on the **flow rate and heater schedule**.
 
-At the reference temperature in the **1.5-inch reactor**, methanol conversion was similar with and without disturbers (96.26% versus 96.11%), and CO concentrations were also similar (2.49% versus 2.57%). Hydrogen production changed only from 7.5 to 7.6 kg/day.
+### Reactor Size Influenced the Benefit
 
-By contrast, the **2-inch reactor** demonstrated a much stronger CO-reduction benefit under the reported comparison conditions.
+The **1.5-inch reactor** showed much smaller differences under its reference-temperature comparison: methanol conversion was **96.11% with disturbers versus 96.26% without**; CO was **2.57% with versus 2.49% without**; and hydrogen output was **7.6 versus 7.5 kg/day**.
 
-This difference highlights the importance of reactor geometry, aspect ratio, and operating conditions when evaluating passive flow-disturbance strategies. A design that improves performance in one reactor geometry may not provide the same benefit in another.
+These relatively small changes contrast with the substantial CO reduction in the two-inch comparison. **Insert effectiveness must be evaluated in the context of reactor geometry and operating conditions.**
 
-### Thermal Management and Product Quality
+## Thermal Management
 
-Temperature profiles from the reactor tests showed why thermal management was central to performance.
+The original temperature fields below compare the **1.5-inch reactor** without inserts at approximately **4 LHSV** and with inserts at approximately **3.8 LHSV**. These plots show the wall-to-centerline thermal structure and the effect of flow redistribution on local temperature patterns.
 
-Methanol steam reforming cooled the catalyst bed, creating axial and radial temperature differences that affected the reaction environment. The disk-and-ring inserts were evaluated as a passive method of redistributing flow and improving thermal behavior within the packed bed.
+![Temperature distribution in the 1.5-inch reactor without passive flow disturbers](/images/projects/h2-powertech-methanol-reforming/temperature-without-disturbers.png)
 
-The experiments also showed that increasing wall temperature alone could improve methanol conversion while increasing CO formation.
+*Without flow disturbers; approximately 4 LHSV. Original temperature-distribution figure supplied for this project; see Fig. 5(a) in Chou et al. (2025).*
 
-Passive flow disturbance provided an additional design variable for improving reactor performance while managing the relationship between conversion, CO concentration, and hydrogen production.
+![Temperature distribution in the 1.5-inch reactor with passive flow disturbers](/images/projects/h2-powertech-methanol-reforming/temperature-with-disturbers.png)
+
+*With flow disturbers; approximately 3.8 LHSV. Original temperature-distribution figure supplied for this project; see Fig. 5(b) in Chou et al. (2025).*
+
+The profiles illustrate more distributed heating near the bed entrance with passive inserts. Because the flow conditions are close but **not identical**, these visuals provide a qualitative comparison rather than a perfectly matched operating-point measurement.
 
 ## Engineering Takeaways
 
-- **Passive flow management can improve multiple reactor performance metrics.** In the 2-inch reactor comparison, flow disturbers increased methanol conversion and hydrogen production while reducing CO concentration.
-- **Reactor geometry affects the effectiveness of passive inserts.** The 2-inch reactor demonstrated a substantially greater CO-reduction benefit than the 1.5-inch reactor under the tested conditions.
-- **Higher operating temperature is not automatically better.** Thermal-management strategies must account for both endothermic conversion and temperature-sensitive CO formation.
-- **Reactor performance should be evaluated as a system.** Methanol conversion, CO concentration, hydrogen production, and thermal behavior must be considered together rather than optimized independently.
-- **Experimental validation is essential for engineering design.** Paired reactor tests and gas analysis demonstrated how passive internal geometry changes can translate into measurable improvements in reactor performance.
+1. **Evaluate reactor performance as a system.** CO concentration and useful hydrogen production matter alongside methanol conversion.
+2. **Passive insert benefits depend on geometry.** The two-inch reactor showed a more pronounced CO-reduction benefit than the 1.5-inch design in the reported comparisons.
+3. **Flow management can mitigate the conversion–CO trade-off.** Additional wall heating alone may raise both conversion and CO; internal flow redistribution provides another operating/design lever.
 
 ## Publication
 
-Y.-C. Chou, A. Gómez-Hernández, K. K. Ochi, C. Agba, M. Horton, and P. A. Erickson, "Analysis of carbon monoxide and hydrogen yield in steam methanol reformation with passive flow disturbance," *International Journal of Hydrogen Energy*, vol. 157, article 150281, 2025.
+**Y.-C. Chou**, A. Gómez-Hernández, K. K. Ochi, C. Agba, M. Horton, and P. A. Erickson, "Analysis of carbon monoxide and hydrogen yield in steam methanol reformation with passive flow disturbance," *International Journal of Hydrogen Energy*, vol. 157, article 150281, 2025.
 
-[Read the published paper](https://doi.org/10.1016/j.ijhydene.2025.150281)
+<a href="https://doi.org/10.1016/j.ijhydene.2025.150281" target="_blank" rel="noopener noreferrer">Read the published paper (DOI: 10.1016/j.ijhydene.2025.150281)</a>
 
-*This case study focuses on the experimental, industry-collaborative study. The separate CFD project on this website addresses numerical modeling and flow-disturber geometry analysis.*
+*For numerical modeling and passive-insert geometry analysis, see the [CFD Packed-Bed Reactor project](/entries/cfd-packed-bed-reactor/).*
