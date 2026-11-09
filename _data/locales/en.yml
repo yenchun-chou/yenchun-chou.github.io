@@ -8,7 +8,7 @@ navigation:
       url: "/work/"
     - title: "Contact"
       url: "www.linkedin.com/in/yen-chun-chou-b43852168"
-  cv: "CV"
+  cv: "Resume"
 
 about:
   - "My work combines computational modeling and experimental testing to improve thermal-fluid systems."
