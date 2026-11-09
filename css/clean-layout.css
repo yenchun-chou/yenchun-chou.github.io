@@ -195,7 +195,8 @@ hr {
   margin: 0 0 64px;
 }
 
-/* Consistent thumbnail containers */
+
+/* Homepage project thumbnails — transparent background */
 
 .featured-project-image-link {
   display: flex;
@@ -205,10 +206,10 @@ hr {
   aspect-ratio: 16 / 10;
   box-sizing: border-box;
   margin: 0;
-  padding: 14px;
-  background: var(--thumb-bg, #f4f5f6);
-  border: 1px solid var(--border, #dedede);
-  border-radius: 6px;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
   overflow: hidden;
 }
 
@@ -219,7 +220,7 @@ hr {
   max-height: 100%;
   object-fit: contain;
   background: transparent;
-  border: 0;
+  border: none;
   border-radius: 0;
   box-shadow: none;
 }
