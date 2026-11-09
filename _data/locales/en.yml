@@ -14,9 +14,9 @@ navigation:
   cv: "CV"
 
 about:
-  - "I'm a mechanical engineer and PhD candidate specializing in thermal-fluid systems, computational modeling, and experimental development."
-  - "My work spans mechanical design, CFD, heat transfer, reactor systems, and engineering data analysis, with a focus on turning complex technical problems into practical solutions."
-  - "Here you'll find selected research, engineering projects, and hands-on design work."
+  - "My work combines computational modeling and experimental testing to improve thermal-fluid systems."
+  - "My PhD research at UC Davis combines CFD, heat and mass transfer, chemical reaction modeling, and experimental validation to investigate and optimize packed-bed reactors for hydrogen production."
+  - "Beyond my doctoral research, my experience includes high-temperature reactor testing at UC San Diego, pilot-scale biomass-to-RNG systems at West Biofuels, and liquid-cooling simulations for high-power electronics."
 
 about_page:
   title: "About me"
