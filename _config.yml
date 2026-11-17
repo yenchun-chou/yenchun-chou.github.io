@@ -45,7 +45,8 @@ appearance:
   accent_color: "#2b2b2b"
   recent_items_on_home: 5
   background_pattern: "grid"
-  theme_mode: "auto"
+  # theme_mode: "auto"
+  theme_mode: "light"
   font_style: "default"
 
 plugins:
