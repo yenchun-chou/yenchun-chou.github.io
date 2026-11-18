@@ -93,17 +93,21 @@ The paper, like most cold-plate studies, applies a fixed heat flux. Real resisto
 
 I wrote a new OpenFOAM-13 boundary condition, `resistiveHeaterTemperature`, in which each heater face gives off:
 
-For a constant-voltage supply:
+<p>For a constant-voltage supply:</p>
 
-\[
-q = \frac{q_0}{1+\alpha(T-T_0)}
-\]
+<div style="display:flex;align-items:center;justify-content:center;gap:12px;margin:24px 0;font-family:Georgia,serif;font-size:22px;">
+  <span>q =</span>
+  <span style="display:inline-flex;flex-direction:column;align-items:center;line-height:1.5;">
+    <span style="display:block;width:100%;padding:0 12px 4px;text-align:center;border-bottom:1px solid currentColor;">q₀</span>
+    <span style="padding:4px 8px 0;">1 + α(T − T₀)</span>
+  </span>
+</div>
 
-For a constant-current supply:
+<p>For a constant-current supply:</p>
 
-\[
-q = q_0[1+\alpha(T-T_0)]
-\]
+<div style="margin:24px 0;text-align:center;font-family:Georgia,serif;font-size:22px;">
+  q = q₀[1 + α(T − T₀)]
+</div>
 
 - **Verified analytically:** On a 1D conduction test it matches the closed-form wall temperature to every printed digit, for both supply modes and in parallel.
 - **Applied to the cold plate** (copper-like α = 0.0039 K⁻¹, 400 W nominal): Constant voltage dissipates 383.9 W and lowers the peak temperature by 0.6 K; constant current dissipates 418.3 W and raises it by 0.7 K.
