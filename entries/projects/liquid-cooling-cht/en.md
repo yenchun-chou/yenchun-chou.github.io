@@ -1,4 +1,3 @@
-
 ---
 title: "Liquid Cooling of High-Power Electronics: Conjugate Heat Transfer Validation"
 type: project
