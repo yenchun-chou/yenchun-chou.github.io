@@ -85,7 +85,7 @@ SST bars are all below 1.4 %, so its answer belongs to the model, not to the mes
 
 ![Streamlines in the U-turn region](/images/projects/liquid-cooling-cht/uturn-streamlines.png)
 
-*Streamlines at the U-turn end of the plate (x = 200–258 mm), at mid-channel height; k-ε left, SST right. Flow arrives from the left through the centre channels (|y| < 25 mm), turns at the end wall and leaves to the left through the outer channels.*
+*Streamlines at the U-turn end of the plate (x = 200–258 mm), at mid-channel height; k-ε left, SST right. Flow arrives from the left through the centre channels (within 25 mm of the centreline), turns at the end wall and leaves to the left through the outer channels.*
 
 Three features are visible. The jet from the centre channels splits at y = 0 against the end wall and leaves two counter-rotating vortices at x ≈ 250 mm, the stagnant grey zone in the paper's Fig. 1b. The flow then wraps around the rounded corners into the outer channels. Where the turned flow meets the first return channels (y ≈ ±28 mm) it separates at the fin tips, so those channels start with a small recirculation. With SST the vortices are larger and the separation stronger. The shape of this end decides how much flow each return channel gets, which is why the plate-end geometry error below mattered.
 
